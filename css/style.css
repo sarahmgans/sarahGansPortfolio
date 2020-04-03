@@ -64,7 +64,6 @@ h2 {
 
 @media(max-width: 548px){
     header {
-        height: 90vh;
         padding-right: 10px;
         padding-left: 10px;
     }
@@ -84,10 +83,6 @@ h2 {
 }
 
 @media(max-width: 404px){
-    header {
-        height: 80vh;
-    }
-    
     .headerImg img {
         width: 300px;
     }
