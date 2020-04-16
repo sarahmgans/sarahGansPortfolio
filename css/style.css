@@ -26,6 +26,7 @@ header {
 
 h1 {
     font-size: 39px;
+    font-weight: 200;
 }
 
 .headerImg img {
@@ -35,15 +36,18 @@ h1 {
 h1, 
 h2 {
     color: white;
-    font-family: 'website_font_fullregular';
+    /* font-family: 'website_font_fullregular'; */
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-weight: regular;
+    letter-spacing: 1.3px;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 h2 {
     font-size: 30px;
+    font-weight: 300;
 }
 
 @media(max-width: 759px) {
@@ -69,9 +73,5 @@ h2 {
 @media(max-width: 404px){
     .headerImg img {
         width: 300px;
-    }
-
-    h2 {
-        text-align: center;
     }
 }
