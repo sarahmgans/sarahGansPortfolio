@@ -78,7 +78,7 @@ i.fas {
     color: #EFEFF0;
     font-size: 55px;
     transition: 0.3s;
-    margin-bottom: 13px;
+    margin-bottom: 30px;
 }
 
 i.fas:hover {
@@ -91,35 +91,43 @@ i.fas:hover {
     align-items: center;
 }
 
-// .slide {
-// 	-webkit-animation: slide 3s infinate both;
-// 	animation: slide 3s infinite both;
-// }
+.slide {
+	-webkit-animation: slide 3s infinite;
+	animation: slide 3s infinite;
+}
 
 @-webkit-keyframes slide {
   0% {
-    -webkit-transform: translate3d(0, -50%, 0);
-            transform: translate3d(0, -50%, 0);
-            opacity: 0.3;
+    -webkit-transform: translate(0, -15px);
+    transform: translate(0, -15px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
   }
 
   100% {
-    -webkit-transform: translate3d(0, -20%, 0);
-            transform: translate3d(0, -20%, 0);
-            opacity: 1;
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+            opacity: 0;
   }
 }
 
 @keyframes slide {
   0% {
-    -webkit-transform: translate3d(0, -50%, 0);
-            transform: translate3d(0, -50%, 0);
-            opacity: 0.3;
+    -webkit-transform: translate(0, -15px);
+            transform: translate(0, -15px);
+            opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
   }
 
   100% {
-    -webkit-transform: translate3d(0, -20%, 0);
-            transform: translate3d(0, -20%, 0);
-            opacity: 1;
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+            opacity: 0;
   }
 }
