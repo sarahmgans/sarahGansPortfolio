@@ -1,5 +1,5 @@
 section.about{
-  height: 60vh;
+  height: 75vh;
   background-color: #EFEFF0;
   h2 {
     padding-top: 50px;
@@ -8,11 +8,31 @@ section.about{
     font-family: 'Rockhill Sans';
     text-transform: lowercase;
     font-size: 35px;
+    margin-bottom: 0;
+    font-weight: lighter;
   }
   p{
     font-family: 'Open Sans';
     color: #444349;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 17px;
+    line-height: 29px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
   }
-}
+  .aboutParent {
+    display: flex;
+    justify-content: center;
+    div:nth-child(1){
+      margin-top: 20px;
+    }
+  }
+  .picture {
+      img{
+        width: 310px;
+        margin-left: 120px;
+        -webkit-box-shadow: 15px 15px 1px 1px rgba(255,101,132,0.93);
+        -moz-box-shadow: 15px 15px 1px 1px rgba(255,101,132,0.93);
+        box-shadow: 15px 15px 1px 1px rgba(255,101,132,0.93);
+      }
+    }
+  }

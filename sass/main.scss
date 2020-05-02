@@ -1,3 +1,26 @@
+@font-face {
+  font-family: 'Hamburg Hand';
+  src: url('../Fonts/HamburgHand-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Hamburg Hand';
+  src: url('../Fonts/HamburgHand-Regular.otf');
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: 'Hamburg Hand';
+  src: url('../Fonts/HamburgHand-Light.otf');
+  font-weight: light;
+}
+
+@font-face {
+  font-family: 'Rockhill Sans';
+  src: url('../Fonts/RockhillSans-Rough.otf');
+}
+
 @import 'global';
 @import 'setup';
 @import 'header';

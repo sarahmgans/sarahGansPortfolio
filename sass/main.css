@@ -1,3 +1,26 @@
+@font-face {
+  font-family: 'Hamburg Hand';
+  src: url("../Fonts/HamburgHand-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Hamburg Hand';
+  src: url("../Fonts/HamburgHand-Regular.otf");
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: 'Hamburg Hand';
+  src: url("../Fonts/HamburgHand-Light.otf");
+  font-weight: light;
+}
+
+@font-face {
+  font-family: 'Rockhill Sans';
+  src: url("../Fonts/RockhillSans-Rough.otf");
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11,6 +34,11 @@ img {
   max-width: 1280px;
   width: 90%;
   margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 html {
@@ -295,7 +323,6 @@ h2 {
 
 h2 {
   font-size: 30px;
-  font-weight: light;
 }
 
 span {
@@ -323,8 +350,9 @@ nav ul li {
   text-transform: lowercase;
   color: #EFEFF0;
   margin: 25px;
-  font-size: 20px;
-  letter-spacing: 1.1px;
+  font-size: 22px;
+  letter-spacing: 1.3px;
+  font-weight: lighter;
 }
 
 nav ul li a:hover,
@@ -404,7 +432,7 @@ i.fas:hover {
 }
 
 section.about {
-  height: 60vh;
+  height: 75vh;
   background-color: #EFEFF0;
 }
 
@@ -415,17 +443,41 @@ section.about h2 {
   font-family: 'Rockhill Sans';
   text-transform: lowercase;
   font-size: 35px;
+  margin-bottom: 0;
+  font-weight: lighter;
 }
 
 section.about p {
   font-family: 'Open Sans';
   color: #444349;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 17px;
+  line-height: 29px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+section.about .aboutParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.about .aboutParent div:nth-child(1) {
+  margin-top: 20px;
+}
+
+section.about .picture img {
+  width: 310px;
+  margin-left: 120px;
+  -webkit-box-shadow: 15px 15px 1px 1px rgba(255, 101, 132, 0.93);
+  box-shadow: 15px 15px 1px 1px rgba(255, 101, 132, 0.93);
 }
 
 section.skills {
-  height: 60vh;
+  height: 70vh;
   background-color: #9CAEA9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -437,13 +489,14 @@ section.skills {
 }
 
 section.skills h2 {
-  margin-bottom: 105px;
+  margin-bottom: 120px;
   padding-top: 50px;
   color: #444349;
   text-align: left;
   font-family: 'Rockhill Sans';
   text-transform: lowercase;
   font-size: 35px;
+  font-weight: lighter;
 }
 
 section.skills ul {
@@ -466,7 +519,16 @@ section.skills ul li {
 }
 
 section.skills ul li:hover, section.skills ul li:focus {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+section.skills ul li p {
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Open Sans';
+  color: #444349;
+  font-weight: 400;
+  letter-spacing: 0.3px;
 }
 /*# sourceMappingURL=main.css.map */
