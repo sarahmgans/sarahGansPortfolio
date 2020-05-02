@@ -6,16 +6,19 @@
     <title>Sarah Gans | Web Developer</title>
     <link rel="stylesheet" href="./sass/main.css" />
     <script src="https://kit.fontawesome.com/b92fc38b7b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+      <div class="wrapper headerParent">
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about" class="about">About</a></li>
+                <li><a href="#skills" class="skills">Skills</a></li>
+                <li><a href="#" class="portfolio">Portfolio</a></li>
+                <li><a href="#" class="contact">Contact</a></li>
             </ul>
         </nav>
         <div>
@@ -23,14 +26,36 @@
             <h2><span>//</span> Front-End Web Developer <span>//</span></h2>
         </div>
         <div class="chev slide">
-            <i class="fas fa-chevron-down"></i>
+            <a href="#about" class="about"><i class="fas fa-chevron-down"></i></a>
         </div>
+      </div>
     </header>
     <main>
       <section class="about" id="about">
-
+        <div class="wrapper">
+        <h2><span>//</span> About</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sint aut, alias provident tempora nisi quasi vel reiciendis, quos fuga fugit pariatur at. Provident sint optio repellat quidem sunt dicta, alias, a doloribus corrupti aspernatur molestiae mollitia eum quia qui, eveniet consequuntur eius illum quos natus cumque. Similique, asperiores magnam?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor magnam quia ipsam minima molestiae alias assumenda dignissimos iusto harum, voluptatum culpa. Facere, impedit est velit, repellendus optio libero harum reiciendis et at incidunt perspiciatis ab delectus animi minus eius corrupti accusamus sunt! Reiciendis, expedita. Officiis dignissimos iste fugiat nihil reprehenderit.</p>
+        </div>
+      </section>
+      <section class="skills" id="skills">
+        <div class="wrapper">
+          <h2><span>//</span> Skills</h2>
+          <ul>
+            <li><i class="devicon-visualstudio-plain"></i></li>
+            <li><i class="devicon-github-plain"></i></li>
+            <li><i class="devicon-html5-plain"></i></li>
+            <li><i class="devicon-css3-plain"></i></li>
+            <li><i class="devicon-sass-original"></i></li>
+            <li><i class="devicon-javascript-plain"></i></li>
+            <li><i class="devicon-jquery-plain"></i></li>
+            <li><i class="devicon-react-original"></i></li>
+          </ul>
+        </div>
       </section>
     </main>
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+<script src="script.js"></script>
 </body>
 </html>
