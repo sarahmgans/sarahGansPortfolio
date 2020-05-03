@@ -334,7 +334,7 @@ h2 {
 }
 
 span {
-  color: #A24936;
+  color: #DD594A;
 }
 
 a {
@@ -396,8 +396,8 @@ header ul {
   z-index: 1000;
 }
 
-i.fas {
-  color: #A24936;
+header i.fas {
+  color: #DD594A;
   font-size: 55px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -461,7 +461,7 @@ section.about {
 
 section.about h2 {
   padding-top: 50px;
-  color: #444349;
+  color: #272727;
   text-align: left;
   font-family: 'Rockhill Sans';
   text-transform: lowercase;
@@ -473,7 +473,7 @@ section.about h2 {
 
 section.about p {
   font-family: 'Apercu Pro Regular';
-  color: #444349;
+  color: #272727;
   font-size: 18px;
   line-height: 29px;
   font-weight: 400;
@@ -496,13 +496,13 @@ section.about .aboutParent div:nth-child(1) {
 section.about .picture img {
   width: 310px;
   margin-left: 120px;
-  -webkit-box-shadow: 15px 15px 1px 1px #A24936;
-  box-shadow: 15px 15px 1px 1px #A24936;
+  -webkit-box-shadow: 15px 15px 1px 1px #DD594A;
+  box-shadow: 15px 15px 1px 1px #DD594A;
 }
 
 section.skills {
   height: auto;
-  background-color: #9CAEA9;
+  background-color: #C6D7D4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,7 +512,7 @@ section.skills {
 section.skills h2 {
   margin-bottom: 58px;
   padding-top: 50px;
-  color: #444349;
+  color: #272727;
   text-align: left;
   font-family: 'Rockhill Sans';
   text-transform: lowercase;
@@ -537,24 +537,24 @@ section.skills ul {
 
 section.skills ul li {
   font-size: 80px;
-  color: #A24936;
+  color: #272727;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   list-style-type: none;
-  margin-left: 90px;
-  margin-right: 90px;
-  margin-bottom: 40px;
+  margin-left: 75px;
+  margin-right: 75px;
+  margin-bottom: 45px;
 }
 
 section.skills ul li:hover, section.skills ul li:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  color: #A24936;
+  color: #DD594A;
 }
 
 section.skills ul li p {
   font-family: 'Apercu Pro Regular';
-  color: #444349;
+  color: #272727;
   font-size: 17px;
   letter-spacing: 0.4px;
   text-align: center;
@@ -567,7 +567,7 @@ section.projects {
 
 section.projects h2 {
   padding-top: 50px;
-  color: #444349;
+  color: #272727;
   text-align: left;
   font-family: 'Rockhill Sans';
   text-transform: lowercase;
@@ -579,7 +579,7 @@ section.projects h2 {
 
 section.contact {
   height: 50vh;
-  background-color: #9CAEA9;
+  background-color: #C6D7D4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,7 +591,7 @@ section.contact {
 
 section.contact h2 {
   padding-top: 50px;
-  color: #444349;
+  color: #272727;
   text-align: left;
   font-family: 'Rockhill Sans';
   text-transform: lowercase;

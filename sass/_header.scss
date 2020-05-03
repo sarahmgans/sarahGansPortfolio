@@ -86,13 +86,13 @@ header ul {
     padding: 0;
     display: flex;
     position: fixed;
-    background-color: #444349;
+    background-color: $darkColor;
     width: 100%;
     justify-content: center;
     z-index: 1000;
 }
 
-i.fas {
+header i.fas {
     color: $accentColor;
     font-size: 55px;
     transition: 0.3s;

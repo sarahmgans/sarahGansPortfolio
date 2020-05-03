@@ -1,11 +1,11 @@
 section.contact {
   height: 50vh;
-  background-color: #9CAEA9;
+  background-color: $mediumColor;
   display: flex;
   flex-direction: column;
   h2 {
     padding-top: 50px;
-    color: #444349;
+    color: $darkestColor;
     text-align: left;
     font-family: 'Rockhill Sans';
     text-transform: lowercase;
