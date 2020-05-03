@@ -23,6 +23,12 @@
   src: url('../Fonts/Apercu\ Pro\ Light.otf');
 }
 
+@font-face {
+  font-family: 'Apercu Pro Regular';
+  src: url('../Fonts/Apercu\ Pro\ Regular.otf')
+}
+
+@import 'variables';
 @import 'global';
 @import 'setup';
 @import 'header';

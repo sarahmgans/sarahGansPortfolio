@@ -1,6 +1,7 @@
 section.about{
-  height: 80vh;
-  background-color: #EFEFF0;
+  height: auto;
+  background-color: $lightColor;
+  padding-bottom: 80px;
   h2 {
     padding-top: 50px;
     color: #444349;
@@ -13,9 +14,9 @@ section.about{
     letter-spacing: 1.4px;
   }
   p{
-    font-family: 'Apercu Pro Light';
+    font-family: 'Apercu Pro Regular';
     color: #444349;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 29px;
     font-weight: 400;
     letter-spacing: 0.4px;
@@ -31,9 +32,14 @@ section.about{
       img{
         width: 310px;
         margin-left: 120px;
-        -webkit-box-shadow: 15px 15px 1px 1px rgba(255,101,132,0.93);
-        -moz-box-shadow: 15px 15px 1px 1px rgba(255,101,132,0.93);
-        box-shadow: 15px 15px 1px 1px rgba(255,101,132,0.93);
+        -webkit-box-shadow: 15px 15px 1px 1px $accentColor;
+        -moz-box-shadow: 15px 15px 1px 1px $accentColor;
+        box-shadow: 15px 15px 1px 1px $accentColor;
       }
     }
   }
+
+  // 0.93
+
+  // // #EFB0A1
+ 

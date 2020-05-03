@@ -24,7 +24,7 @@ h1 {
 
 h1, 
 h2 {
-    color: #EFEFF0;
+    color: $lightColor;
     text-transform: uppercase;
     padding: 0;
     text-align: center;
@@ -38,34 +38,47 @@ h2 {
 }
 
 span {
-    color: #ff6584;
+    color: $accentColor;
 }
 
 a {
     text-decoration: none;
-    color: #EFEFF0;
-    transition: 0.3s; 
+    border: 2px solid transparent;
+    color: $lightColor;
+    transition: 0.2s all ease-out; 
 }
 
 nav {
     display: flex;
     justify-content: center;
+    height: 55px;
 }
 
 nav ul li {
     font-family: 'Rockhill Sans';
     text-transform: lowercase;
-    color: #EFEFF0;
+    color: $lightColor;
     margin: 15px;
     font-size: 23px;
     letter-spacing: 2px;
     font-weight: lighter;
 }
 
-nav ul li a:hover, 
-nav ul li a:focus {
-    color: #ff6584;
+nav ul li a:focus{
+  outline: thin dotted;
 }
+
+nav ul li a:active,
+nav ul li a:hover {
+  outline: 0;
+}
+
+nav ul li a:hover, 
+nav ul li a.active,
+nav ul li a:active {
+    border-bottom: 2px solid white;
+}
+
 
 header ul {
     list-style: none;
@@ -80,7 +93,7 @@ header ul {
 }
 
 i.fas {
-    color: #ff6584;
+    color: $accentColor;
     font-size: 55px;
     transition: 0.3s;
     margin-bottom: 35px;

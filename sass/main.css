@@ -23,6 +23,11 @@
   src: url("../Fonts/Apercu Pro Light.otf");
 }
 
+@font-face {
+  font-family: 'Apercu Pro Regular';
+  src: url("../Fonts/Apercu Pro Regular.otf");
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -329,14 +334,15 @@ h2 {
 }
 
 span {
-  color: #ff6584;
+  color: #A24936;
 }
 
 a {
   text-decoration: none;
+  border: 2px solid transparent;
   color: #EFEFF0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
 }
 
 nav {
@@ -346,6 +352,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 55px;
 }
 
 nav ul li {
@@ -358,9 +365,19 @@ nav ul li {
   font-weight: lighter;
 }
 
-nav ul li a:hover,
 nav ul li a:focus {
-  color: #ff6584;
+  outline: thin dotted;
+}
+
+nav ul li a:active,
+nav ul li a:hover {
+  outline: 0;
+}
+
+nav ul li a:hover,
+nav ul li a.active,
+nav ul li a:active {
+  border-bottom: 2px solid white;
 }
 
 header ul {
@@ -380,7 +397,7 @@ header ul {
 }
 
 i.fas {
-  color: #ff6584;
+  color: #A24936;
   font-size: 55px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -437,8 +454,9 @@ i.fas {
 }
 
 section.about {
-  height: 80vh;
+  height: auto;
   background-color: #EFEFF0;
+  padding-bottom: 80px;
 }
 
 section.about h2 {
@@ -454,9 +472,9 @@ section.about h2 {
 }
 
 section.about p {
-  font-family: 'Apercu Pro Light';
+  font-family: 'Apercu Pro Regular';
   color: #444349;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 29px;
   font-weight: 400;
   letter-spacing: 0.4px;
@@ -478,24 +496,21 @@ section.about .aboutParent div:nth-child(1) {
 section.about .picture img {
   width: 310px;
   margin-left: 120px;
-  -webkit-box-shadow: 15px 15px 1px 1px rgba(255, 101, 132, 0.93);
-  box-shadow: 15px 15px 1px 1px rgba(255, 101, 132, 0.93);
+  -webkit-box-shadow: 15px 15px 1px 1px #A24936;
+  box-shadow: 15px 15px 1px 1px #A24936;
 }
 
 section.skills {
-  height: 70vh;
+  height: auto;
   background-color: #9CAEA9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding-bottom: 20px;
 }
 
 section.skills h2 {
-  margin-bottom: 120px;
+  margin-bottom: 58px;
   padding-top: 50px;
   color: #444349;
   text-align: left;
@@ -510,32 +525,35 @@ section.skills ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0;
   padding: 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 section.skills ul li {
-  font-size: 60px;
-  color: #444349;
+  font-size: 80px;
+  color: #A24936;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   list-style-type: none;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-bottom: 40px;
 }
 
 section.skills ul li:hover, section.skills ul li:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  color: #ff6584;
+  color: #A24936;
 }
 
 section.skills ul li p {
-  font-family: 'Apercu Pro Light';
+  font-family: 'Apercu Pro Regular';
   color: #444349;
   font-size: 17px;
   letter-spacing: 0.4px;
