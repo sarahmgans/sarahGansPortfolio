@@ -1,19 +1,16 @@
 @font-face {
-  font-family: 'Hamburg Hand';
+  font-family: 'Hamburg Hand Bold';
   src: url("../Fonts/HamburgHand-Bold.otf");
-  font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Hamburg Hand';
+  font-family: 'Hamburg Hand Regular';
   src: url("../Fonts/HamburgHand-Regular.otf");
-  font-weight: regular;
 }
 
 @font-face {
-  font-family: 'Hamburg Hand';
+  font-family: 'Hamburg Hand Light';
   src: url("../Fonts/HamburgHand-Light.otf");
-  font-weight: light;
 }
 
 @font-face {
@@ -305,9 +302,11 @@ header {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
   letter-spacing: 1.3px;
-  font-weight: bold;
+  font-family: 'Hamburg Hand Bold';
+  margin-top: 45px;
+  margin-bottom: 20px;
 }
 
 .headerImg img {
@@ -317,17 +316,16 @@ h1 {
 h1,
 h2 {
   color: #EFEFF0;
-  font-family: 'Hamburg Hand';
   text-transform: uppercase;
-  letter-spacing: 1.3px;
-  margin: 0;
   padding: 0;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 h2 {
   font-size: 30px;
+  font-family: 'Hamburg Hand Light';
+  letter-spacing: 1.8px;
+  margin: 0;
 }
 
 span {
@@ -354,9 +352,9 @@ nav ul li {
   font-family: 'Rockhill Sans';
   text-transform: lowercase;
   color: #EFEFF0;
-  margin: 25px;
-  font-size: 22px;
-  letter-spacing: 1.3px;
+  margin: 15px;
+  font-size: 23px;
+  letter-spacing: 2px;
   font-weight: lighter;
 }
 
@@ -365,14 +363,20 @@ nav ul li a:focus {
   color: #ff6584;
 }
 
-ul {
+header ul {
   list-style: none;
   margin: 0;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
+  position: fixed;
+  background-color: #444349;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 1000;
 }
 
 i.fas {
@@ -380,7 +384,7 @@ i.fas {
   font-size: 55px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .chev {
@@ -433,7 +437,7 @@ i.fas {
 }
 
 section.about {
-  height: 75vh;
+  height: 80vh;
   background-color: #EFEFF0;
 }
 
@@ -446,6 +450,7 @@ section.about h2 {
   font-size: 35px;
   margin-bottom: 0;
   font-weight: lighter;
+  letter-spacing: 1.4px;
 }
 
 section.about p {
@@ -498,6 +503,7 @@ section.skills h2 {
   text-transform: lowercase;
   font-size: 35px;
   font-weight: lighter;
+  letter-spacing: 1.4px;
 }
 
 section.skills ul {
@@ -510,6 +516,8 @@ section.skills ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 section.skills ul li {
@@ -517,11 +525,13 @@ section.skills ul li {
   color: #444349;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  list-style-type: none;
 }
 
 section.skills ul li:hover, section.skills ul li:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  color: #ff6584;
 }
 
 section.skills ul li p {
@@ -530,5 +540,61 @@ section.skills ul li p {
   font-size: 17px;
   letter-spacing: 0.4px;
   text-align: center;
+}
+
+section.projects {
+  background: #EFEFF0;
+  height: 50vh;
+}
+
+section.projects h2 {
+  padding-top: 50px;
+  color: #444349;
+  text-align: left;
+  font-family: 'Rockhill Sans';
+  text-transform: lowercase;
+  font-size: 35px;
+  margin-bottom: 0;
+  font-weight: lighter;
+  letter-spacing: 1.4px;
+}
+
+section.contact {
+  height: 50vh;
+  background-color: #9CAEA9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.contact h2 {
+  padding-top: 50px;
+  color: #444349;
+  text-align: left;
+  font-family: 'Rockhill Sans';
+  text-transform: lowercase;
+  font-size: 35px;
+  font-weight: lighter;
+  letter-spacing: 1.4px;
+}
+
+footer {
+  background-color: #444349;
+  width: 100%;
+}
+
+footer p {
+  font-family: 'Apercu Pro Light';
+  font-size: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  color: #EFEFF0;
+  font-weight: 400;
+  letter-spacing: 0.4px;
 }
 /*# sourceMappingURL=main.css.map */

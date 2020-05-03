@@ -12,18 +12,23 @@ section.skills {
     text-transform: lowercase;
     font-size: 35px;
     font-weight: lighter;
+    letter-spacing: 1.4px;
   }
   ul{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin: 0;
+    padding: 0;
     li {
       font-size: 60px;
       color: #444349;
       transition: 0.3s;
+      list-style-type: none;
       &:hover,
       &:focus {
         transform: scale(1.2);
+        color: #ff6584;
       }
       p {
         font-family: 'Apercu Pro Light';

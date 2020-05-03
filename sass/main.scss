@@ -1,19 +1,16 @@
 @font-face {
-  font-family: 'Hamburg Hand';
+  font-family: 'Hamburg Hand Bold';
   src: url('../Fonts/HamburgHand-Bold.otf');
-  font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Hamburg Hand';
+  font-family: 'Hamburg Hand Regular';
   src: url('../Fonts/HamburgHand-Regular.otf');
-  font-weight: regular;
 }
 
 @font-face {
-  font-family: 'Hamburg Hand';
+  font-family: 'Hamburg Hand Light';
   src: url('../Fonts/HamburgHand-Light.otf');
-  font-weight: light;
 }
 
 @font-face {
@@ -31,3 +28,6 @@
 @import 'header';
 @import 'about';
 @import 'skills';
+@import 'projects';
+@import 'contact';
+@import 'footer';

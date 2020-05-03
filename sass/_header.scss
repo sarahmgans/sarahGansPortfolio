@@ -11,9 +11,11 @@ header {
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 60px;
     letter-spacing: 1.3px;
-    font-weight: bold;
+    font-family: 'Hamburg Hand Bold';
+    margin-top: 45px;
+    margin-bottom: 20px;
 }
 
 .headerImg img {
@@ -23,17 +25,16 @@ h1 {
 h1, 
 h2 {
     color: #EFEFF0;
-    font-family: 'Hamburg Hand';
     text-transform: uppercase;
-    letter-spacing: 1.3px;
-    margin: 0;
     padding: 0;
     text-align: center;
-    margin-bottom: 40px;
 }
 
 h2 {
     font-size: 30px;
+    font-family: 'Hamburg Hand Light';
+    letter-spacing: 1.8px;
+    margin: 0;
 }
 
 span {
@@ -55,9 +56,9 @@ nav ul li {
     font-family: 'Rockhill Sans';
     text-transform: lowercase;
     color: #EFEFF0;
-    margin: 25px;
-    font-size: 22px;
-    letter-spacing: 1.3px;
+    margin: 15px;
+    font-size: 23px;
+    letter-spacing: 2px;
     font-weight: lighter;
 }
 
@@ -66,19 +67,23 @@ nav ul li a:focus {
     color: #ff6584;
 }
 
-ul {
+header ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    margin-top: 10px;
+    position: fixed;
+    background-color: #444349;
+    width: 100%;
+    justify-content: center;
+    z-index: 1000;
 }
 
 i.fas {
     color: #ff6584;
     font-size: 55px;
     transition: 0.3s;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
 }
 
 .chev {
