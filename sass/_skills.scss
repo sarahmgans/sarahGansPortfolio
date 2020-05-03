@@ -6,7 +6,7 @@ section.skills {
   h2 {
     margin-bottom: 58px;
     padding-top: 50px;
-    color: $darkestColor;
+    color: $darkColor;
     text-align: left;
     font-family: 'Rockhill Sans';
     text-transform: lowercase;
@@ -23,23 +23,22 @@ section.skills {
     justify-content: center;
     li {
       font-size: 80px;
-      color: $darkestColor;
+      color: $darkColor;
       transition: 0.3s;
       list-style-type: none;
       margin-left: 75px;
       margin-right: 75px;
-      margin-bottom: 45px;
+      margin-bottom: 50px;
+      p {
+        font-family: 'Apercu Pro Regular';
+        font-size: 17px;
+        letter-spacing: 0.4px;
+        text-align: center;
+      }
       &:hover,
       &:focus {
         transform: scale(1.2);
         color: $accentColor;
-      }
-      p {
-        font-family: 'Apercu Pro Regular';
-        color: $darkestColor;
-        font-size: 17px;
-        letter-spacing: 0.4px;
-        text-align: center;
       }
     }
   }

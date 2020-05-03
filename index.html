@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/b92fc38b7b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
   <section class="home" id="home">
@@ -34,7 +35,7 @@
     </section>
     <main>
       <section class="about" id="about">
-        <div class="wrapper">
+        <div class="wrapper" data-aos="fade-up" data-aos-duration="2000">
         <h2><span>//</span> About</h2>
         <div class="aboutParent">
           <div>
@@ -47,8 +48,8 @@
         </div>
         </div>
       </section>
-      <section class="skills" id="skills">
-        <div class="wrapper">
+      <section class="skills " id="skills">
+        <div class="wrapper" data-aos="fade-up" data-aos-duration="2000">
           <h2><span>//</span> Skills</h2>
           <ul>
             <li>
@@ -95,12 +96,12 @@
         </div>
       </section>
       <section class="projects" id="projects">
-        <div class="wrapper">
+        <div class="wrapper" data-aos="fade-up" data-aos-duration="2000">
           <h2><span>//</span> Projects</h2>
         </div>
       </section>
       <section class="contact" id="contact">
-        <div class="wrapper">
+        <div class="wrapper" data-aos="fade-up" data-aos-duration="2000">
           <h2><span>//</span> Contact</h2>
         </div>
       </section>
@@ -110,6 +111,10 @@
         <p>© Sarah Gans 2020</p>
       </div>
     </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 <script src="script.js"></script>
