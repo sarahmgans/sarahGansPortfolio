@@ -287,6 +287,7 @@ html {
 
 header {
   background-image: url(../assets/stardust_@2X.png);
+  background-attachment: fixed;
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,15 +335,15 @@ h2 {
 }
 
 span {
-  color: #DD594A;
+  color: #b3331a;
 }
 
 a {
   text-decoration: none;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   color: #EFEFF0;
-  -webkit-transition: 0.2s all ease-out;
-  transition: 0.2s all ease-out;
+  -webkit-transition: 0.3s all ease-out;
+  transition: 0.3s all ease-out;
 }
 
 nav {
@@ -377,7 +378,7 @@ nav ul li a:hover {
 nav ul li a:hover,
 nav ul li a.active,
 nav ul li a:active {
-  border-bottom: 2px solid white;
+  border-bottom: 3px solid #b3331a;
 }
 
 header ul {
@@ -397,7 +398,7 @@ header ul {
 }
 
 header i.fas {
-  color: #DD594A;
+  color: #b3331a;
   font-size: 55px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -496,8 +497,8 @@ section.about .aboutParent div:nth-child(1) {
 section.about .picture img {
   width: 310px;
   margin-left: 120px;
-  -webkit-box-shadow: 15px 15px 1px 1px #DD594A;
-  box-shadow: 15px 15px 1px 1px #DD594A;
+  -webkit-box-shadow: 15px 15px 1px 1px #b3331a;
+  box-shadow: 15px 15px 1px 1px #b3331a;
 }
 
 section.skills {
@@ -556,7 +557,7 @@ section.skills ul li p {
 section.skills ul li:hover, section.skills ul li:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-  color: #DD594A;
+  color: #b3331a;
 }
 
 section.projects {

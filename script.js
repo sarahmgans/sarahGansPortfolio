@@ -15,20 +15,40 @@ $(document).ready(function () {
   clickEventStart();
 
   // From https://codepen.io/yuki-san/pen/eJqLNO
-  const sections = $('section')
-    nav = $('nav')
-    nav_height = 55
+
+  // All of the sections besides the contact section, as the nav bar never reaches the top of the contact section so it has a different top value. 
+  let section = $('section#home, section#about, section#skills, section#projects')
+    let nav = $('nav')
+    const nav_height = 55
 
   $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop();
 
-    sections.each(function () {
+    section.each(function () {
       var top = $(this).offset().top - nav_height,
         bottom = top + $(this).outerHeight();
 
       if (cur_pos >= top && cur_pos <= bottom) {
         nav.find('a').removeClass('active');
-        sections.removeClass('active');
+        section.removeClass('active');
+
+        $(this).addClass('active');
+        nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
+      }
+    });
+  });
+
+  // The contact section has a different top value so it gets its seperate function. 
+  $(window).on('scroll', function () {
+    var cur_pos = $(this).scrollTop();
+
+    $('section.contact').each(function () {
+      var top = $(this).offset().top - 340,
+        bottom = top + $(this).outerHeight();
+
+      if (cur_pos >= top && cur_pos <= bottom) {
+        nav.find('a').removeClass('active');
+        $('section.contact').removeClass('active');
 
         $(this).addClass('active');
         nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
