@@ -28,6 +28,11 @@
   src: url("../Fonts/Apercu Pro Regular.otf");
 }
 
+@font-face {
+  font-family: 'Apercu Pro Bold';
+  src: url("../Fonts/Apercu Pro Bold.otf");
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -272,6 +277,20 @@ html {
 }
 
 .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visuallyHidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -578,7 +597,7 @@ section.projects h2 {
 }
 
 section.contact {
-  height: 50vh;
+  height: auto;
   background-color: #C6D7D4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -598,6 +617,190 @@ section.contact h2 {
   font-size: 35px;
   font-weight: lighter;
   letter-spacing: 1.4px;
+}
+
+section.contact form {
+  width: 55%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+section.contact .formParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 37px;
+  margin-top: 55px;
+}
+
+section.contact .hereGoes > textarea:nth-child(2) {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #444349;
+  font-family: 'Apercu Pro Regular';
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: regular;
+  color: #444349;
+  -webkit-appearance: none;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+section.contact .submit {
+  margin: 55px auto 50px auto;
+  background-color: transparent;
+  border: 3px solid transparent;
+  width: auto;
+  font-family: 'Hamburg Hand Light';
+  font-weight: lighter;
+  font-size: 28px;
+  color: #b3331a;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  letter-spacing: 1px;
+}
+
+section.contact .submit:hover {
+  border-bottom: 3px solid #b3331a;
+}
+
+section.contact .formParent.half {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+section.contact .half input[type="text"],
+section.contact .half input[type="email"] {
+  border: none;
+  border-bottom: 1px solid #444349;
+  width: 100%;
+  height: 30px;
+  font-family: 'Apercu Pro Regular';
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: regular;
+  padding-right: 100px;
+  color: #444349;
+  -webkit-appearance: none;
+  border-radius: 0px;
+  background-color: transparent;
+}
+
+section.contact .half input[type="text"]:focus,
+section.contact .half input[type="email"]:focus {
+  border-bottom: 1px solid #444349;
+  -webkit-box-shadow: 0 1px 0 0 #444349;
+          box-shadow: 0 1px 0 0 #444349;
+}
+
+section.contact .half input[type="text"]:focus:focus + label,
+section.contact .half input[type="email"]:focus:focus + label {
+  color: #444349;
+}
+
+section.contact input::-webkit-input-placeholder {
+  font-family: 'Apercu Pro Regular';
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+}
+
+section.contact input:-ms-input-placeholder {
+  font-family: 'Apercu Pro Regular';
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+}
+
+section.contact input::-ms-input-placeholder {
+  font-family: 'Apercu Pro Regular';
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+}
+
+section.contact input::placeholder {
+  font-family: 'Apercu Pro Regular';
+  font-size: 18px;
+  line-height: 24px;
+  color: black;
+}
+
+section.contact .textArea {
+  padding-bottom: 120px;
+}
+
+section.contact textarea {
+  -webkit-appearance: none;
+  border-radius: 0px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section.contact textarea::-webkit-input-placeholder {
+  color: black;
+}
+
+section.contact textarea:-ms-input-placeholder {
+  color: black;
+}
+
+section.contact textarea::-ms-input-placeholder {
+  color: black;
+}
+
+section.contact textarea::placeholder {
+  color: black;
+}
+
+section.contact textarea:focus {
+  border-bottom: 1px solid #444349;
+  -webkit-box-shadow: 0 1px 0 0 #444349;
+          box-shadow: 0 1px 0 0 #444349;
+}
+
+section.contact textarea:focus:focus + label {
+  color: #444349;
+}
+
+section.contact .buttonParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.contact .phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.contact .phone p {
+  font-family: 'Apercu Pro Regular';
+  font-size: 18px;
+  color: #444349;
+  margin: 0;
+}
+
+section.contact .phone p:nth-child(2) {
+  padding-bottom: 55px;
+  padding-top: 10px;
 }
 
 footer {

@@ -1,5 +1,5 @@
 section.contact {
-  height: 50vh;
+  height: auto;
   background-color: $mediumColor;
   display: flex;
   flex-direction: column;
@@ -12,5 +12,120 @@ section.contact {
     font-size: 35px;
     font-weight: lighter;
     letter-spacing: 1.4px;
+  }
+  form{
+    width: 55%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+  .formParent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 37px;
+    margin-top: 55px;
+  }
+  .hereGoes > textarea:nth-child(2) {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid $darkColor;
+      font-family: 'Apercu Pro Regular';
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: regular;
+      color: $darkColor;
+      -webkit-appearance: none;
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      background-color: transparent;
+  }
+  .submit {
+      margin: 55px auto 50px auto;
+      background-color: transparent;
+      border: 3px solid transparent;
+      width: auto;
+      font-family: 'Hamburg Hand Light';
+      font-weight: lighter;
+      font-size: 28px;
+      color: $accentColor;
+      text-transform: uppercase;
+      text-align: center;
+      transition: 0.3s;
+      letter-spacing: 1px;
+      &:hover {
+        border-bottom: 3px solid $accentColor;
+      }
+  }
+  .formParent.half {
+      flex-basis: 50%;
+  }
+  .half input[type="text"],
+  .half input[type="email"] {
+      border: none;
+      border-bottom: 1px solid $darkColor;
+      width: 100%;
+      height: 30px;
+      font-family: 'Apercu Pro Regular';
+      font-size: 18px;
+      line-height: 24px;
+      font-weight: regular;
+      padding-right: 100px;
+      color: $darkColor;
+      -webkit-appearance: none;
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      background-color: transparent;
+      &:focus {
+      border-bottom: 1px solid $darkColor;
+      box-shadow: 0 1px 0 0 $darkColor;
+      &:focus + label {
+      color: $darkColor;
+      }
+    }
+  }
+
+
+  input::placeholder {
+      font-family: 'Apercu Pro Regular';
+      font-size: 18px;
+      line-height: 24px;
+      color: black;
+  }
+  .textArea {
+      padding-bottom: 120px;
+  }
+  textarea {
+      -webkit-appearance: none;
+      -webkit-border-radius: 0px;
+      border-radius: 0px;
+      transition: 0.3s;
+      &::placeholder {
+        color: black;
+      }
+      &:focus {
+      border-bottom: 1px solid $darkColor;
+      box-shadow: 0 1px 0 0 $darkColor;
+      &:focus + label {
+      color: $darkColor;
+      }
+    }
+  }
+  .buttonParent {
+    display: flex;
+    align-items: center;
+  }
+  .phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+    font-family: 'Apercu Pro Regular';
+    font-size: 18px;
+    color: $darkColor;
+    margin: 0;
+    }
+    p:nth-child(2) {
+      padding-bottom: 55px;
+      padding-top: 10px;
+    }
   }
 }

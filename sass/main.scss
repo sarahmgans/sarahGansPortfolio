@@ -28,6 +28,11 @@
   src: url('../Fonts/Apercu\ Pro\ Regular.otf')
 }
 
+@font-face {
+  font-family: 'Apercu Pro Bold';
+  src: url('../Fonts/Apercu\ Pro\ Bold.otf')
+}
+
 @import 'variables';
 @import 'global';
 @import 'setup';

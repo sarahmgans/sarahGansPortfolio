@@ -43,7 +43,7 @@ $(document).ready(function () {
     var cur_pos = $(this).scrollTop();
 
     $('section.contact').each(function () {
-      var top = $(this).offset().top - 340,
+      var top = $(this).offset().top - 55,
         bottom = top + $(this).outerHeight();
 
       if (cur_pos >= top && cur_pos <= bottom) {
