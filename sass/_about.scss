@@ -32,9 +32,12 @@ section.about{
       img{
         width: 310px;
         margin-left: 120px;
-        -webkit-box-shadow: 15px 15px 1px 1px $accentColor;
-        -moz-box-shadow: 15px 15px 1px 1px $accentColor;
-        box-shadow: 15px 15px 1px 1px $accentColor;
+        -webkit-box-shadow: 10px 10px 1px 0px rgba(179,51,26,1);
+        -moz-box-shadow: 10px 10px 1px 0px rgba(179,51,26,1);
+        box-shadow: 10px 10px 1px 0px rgba(179,51,26,1);
+        // -webkit-box-shadow: 15px 15px 1px 1px $accentColor;
+        // -moz-box-shadow: 15px 15px 1px 1px $accentColor;
+        // box-shadow: 15px 15px 1px 1px $accentColor;
       }
     }
   }
