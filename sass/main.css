@@ -586,7 +586,8 @@ section.skills ul li:hover, section.skills ul li:focus {
 
 section.projects {
   background: #EFEFF0;
-  height: 50vh;
+  height: auto;
+  padding-bottom: 30px;
 }
 
 section.projects h2 {
@@ -599,6 +600,83 @@ section.projects h2 {
   margin-bottom: 0;
   font-weight: lighter;
   letter-spacing: 1.4px;
+}
+
+section.projects img {
+  width: 600px;
+  -webkit-box-shadow: 10px 10px 1px 0px #b3331a;
+  box-shadow: 10px 10px 1px 0px #b3331a;
+}
+
+section.projects .projectParent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 55px;
+  padding-bottom: 80px;
+}
+
+section.projects .projectParent h3 {
+  font-family: 'Rockhill Sans';
+  font-size: 25px;
+  color: #444349;
+  letter-spacing: 1.3px;
+  font-weight: lighter;
+  text-transform: lowercase;
+}
+
+section.projects .projectParent p {
+  font-family: 'Apercu Pro Regular';
+  font-size: 18px;
+  color: #444349;
+  width: 80%;
+  line-height: 27px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+section.projects div.margin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.projects .projectParent h3 {
+  text-align: center;
+}
+
+section.projects .projectParent.middle .link, section.projects .projectParent.middle h3 {
+  margin-right: 12%;
+}
+
+section.projects .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.projects .link a {
+  background-color: #444349;
+  color: #EFEFF0;
+  margin: 20px;
+  padding: 13px 40px;
+  border-radius: 20px;
+  font-family: 'Apercu Pro Bold';
+  font-size: 16px;
+  color: #EFEFF0;
+  letter-spacing: 1px;
 }
 
 section.contact {
