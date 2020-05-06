@@ -13,11 +13,11 @@ header {
 }
 
 h1 {
-    font-size: 60px;
-    letter-spacing: 1.3px;
-    font-family: 'Hamburg Hand Bold';
+    font-size: 75px;
+    letter-spacing: 5px;
+    font-family: 'Hamburg Hand Regular';
     margin-top: 45px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .headerImg img {
@@ -33,37 +33,43 @@ h2 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Hamburg Hand Light';
-    letter-spacing: 1.8px;
+    letter-spacing: 7px;
     margin: 0;
 }
 
-span {
-    color: $accentColor;
+.line {
+  border-top: 3px solid $accentColor;
+  width: 50px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+  margin-top: 30px;
+  border-radius: 1px;
 }
+
+
 
 a {
     text-decoration: none;
     border: 3px solid transparent;
     color: $lightColor;
     transition: 0.3s all ease-out; 
+    padding-bottom: 3px;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    height: 55px;
 }
 
 nav ul li {
-    font-family: 'Rockhill Sans';
-    text-transform: lowercase;
+    font-family: 'Hamburg Hand Light';
     color: $lightColor;
-    margin: 15px;
-    font-size: 23px;
-    letter-spacing: 2px;
-    font-weight: lighter;
+    margin: 25px;
+    font-size: 17px;
+    letter-spacing: 4px;
+    
 }
 
 nav ul li a:focus{

@@ -5,13 +5,19 @@ section.about{
   h2 {
     padding-top: 50px;
     color: $darkColor;
-    text-align: left;
-    font-family: 'Rockhill Sans';
-    text-transform: lowercase;
-    font-size: 35px;
-    margin-bottom: 0;
-    font-weight: lighter;
-    letter-spacing: 1.4px;
+    text-align: center;
+    font-family: 'Hamburg Hand Regular';
+    font-size: 30px;
+    padding-bottom: 50px;
+    letter-spacing: 6px;
+  }
+  .bodyLine {
+    border-top: 3px solid $accentColor;
+    width: 40px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    font-family: 'Hamburg Hand Light'
   }
   p{
     font-family: 'Apercu Pro Regular';
@@ -20,29 +26,19 @@ section.about{
     line-height: 29px;
     font-weight: 400;
     letter-spacing: 0.4px;
+    margin-top: 0;
   }
   .aboutParent {
     display: flex;
     justify-content: center;
-    div:nth-child(1){
-      margin-top: 20px;
-    }
   }
   .picture {
       img{
         width: 310px;
         margin-left: 120px;
-        -webkit-box-shadow: 10px 10px 1px 0px rgba(179,51,26,1);
-        -moz-box-shadow: 10px 10px 1px 0px rgba(179,51,26,1);
-        box-shadow: 10px 10px 1px 0px rgba(179,51,26,1);
-        // -webkit-box-shadow: 15px 15px 1px 1px $accentColor;
-        // -moz-box-shadow: 15px 15px 1px 1px $accentColor;
-        // box-shadow: 15px 15px 1px 1px $accentColor;
+        border: 3px solid $accentColor;
+        padding: 5px;
       }
     }
   }
-
-  // 0.93
-
-  // // #EFB0A1
  

@@ -332,11 +332,11 @@ header {
 }
 
 h1 {
-  font-size: 60px;
-  letter-spacing: 1.3px;
-  font-family: 'Hamburg Hand Bold';
+  font-size: 75px;
+  letter-spacing: 5px;
+  font-family: 'Hamburg Hand Regular';
   margin-top: 45px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .headerImg img {
@@ -352,14 +352,19 @@ h2 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 25px;
   font-family: 'Hamburg Hand Light';
-  letter-spacing: 1.8px;
+  letter-spacing: 7px;
   margin: 0;
 }
 
-span {
-  color: #b3331a;
+.line {
+  border-top: 3px solid #b3331a;
+  width: 50px;
+  margin: 0 auto;
+  padding-bottom: 48px;
+  margin-top: 30px;
+  border-radius: 1px;
 }
 
 a {
@@ -368,6 +373,7 @@ a {
   color: #EFEFF0;
   -webkit-transition: 0.3s all ease-out;
   transition: 0.3s all ease-out;
+  padding-bottom: 3px;
 }
 
 nav {
@@ -377,17 +383,14 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 55px;
 }
 
 nav ul li {
-  font-family: 'Rockhill Sans';
-  text-transform: lowercase;
+  font-family: 'Hamburg Hand Light';
   color: #EFEFF0;
-  margin: 15px;
-  font-size: 23px;
-  letter-spacing: 2px;
-  font-weight: lighter;
+  margin: 25px;
+  font-size: 17px;
+  letter-spacing: 4px;
 }
 
 nav ul li a:focus {
@@ -487,13 +490,20 @@ section.about {
 section.about h2 {
   padding-top: 50px;
   color: #444349;
-  text-align: left;
-  font-family: 'Rockhill Sans';
-  text-transform: lowercase;
-  font-size: 35px;
-  margin-bottom: 0;
-  font-weight: lighter;
-  letter-spacing: 1.4px;
+  text-align: center;
+  font-family: 'Hamburg Hand Regular';
+  font-size: 30px;
+  padding-bottom: 50px;
+  letter-spacing: 6px;
+}
+
+section.about .bodyLine {
+  border-top: 3px solid #b3331a;
+  width: 40px;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  font-family: 'Hamburg Hand Light';
 }
 
 section.about p {
@@ -503,6 +513,7 @@ section.about p {
   line-height: 29px;
   font-weight: 400;
   letter-spacing: 0.4px;
+  margin-top: 0;
 }
 
 section.about .aboutParent {
@@ -514,20 +525,16 @@ section.about .aboutParent {
           justify-content: center;
 }
 
-section.about .aboutParent div:nth-child(1) {
-  margin-top: 20px;
-}
-
 section.about .picture img {
   width: 310px;
   margin-left: 120px;
-  -webkit-box-shadow: 10px 10px 1px 0px #b3331a;
-  box-shadow: 10px 10px 1px 0px #b3331a;
+  border: 3px solid #b3331a;
+  padding: 5px;
 }
 
 section.skills {
   height: auto;
-  background-color: #C6D7D4;
+  background-color: #DCEBEA;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,15 +542,21 @@ section.skills {
 }
 
 section.skills h2 {
-  margin-bottom: 58px;
+  margin-bottom: 50px;
   padding-top: 50px;
   color: #444349;
-  text-align: left;
-  font-family: 'Rockhill Sans';
-  text-transform: lowercase;
-  font-size: 35px;
-  font-weight: lighter;
-  letter-spacing: 1.4px;
+  text-align: center;
+  font-family: 'Hamburg Hand Regular';
+  font-size: 30px;
+  letter-spacing: 6px;
+}
+
+section.skills .bodyLine {
+  border-top: 3px solid #b3331a;
+  width: 40px;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  font-family: 'Hamburg Hand Light';
 }
 
 section.skills ul {
@@ -569,13 +582,22 @@ section.skills ul li {
   margin-left: 75px;
   margin-right: 75px;
   margin-bottom: 50px;
+  width: 80px;
 }
 
 section.skills ul li p {
-  font-family: 'Apercu Pro Regular';
+  font-family: 'Hamburg Hand Light';
   font-size: 17px;
   letter-spacing: 0.4px;
   text-align: center;
+}
+
+section.skills ul li p.js {
+  margin-left: -15px;
+}
+
+section.skills ul li p.fire {
+  margin-left: -10px;
 }
 
 section.skills ul li:hover, section.skills ul li:focus {
@@ -587,25 +609,30 @@ section.skills ul li:hover, section.skills ul li:focus {
 section.projects {
   background: #EFEFF0;
   height: auto;
-  padding-bottom: 30px;
 }
 
 section.projects h2 {
   padding-top: 50px;
   color: #444349;
-  text-align: left;
-  font-family: 'Rockhill Sans';
-  text-transform: lowercase;
-  font-size: 35px;
-  margin-bottom: 0;
-  font-weight: lighter;
-  letter-spacing: 1.4px;
+  text-align: center;
+  font-family: 'Hamburg Hand Regular';
+  font-size: 30px;
+  margin-bottom: 50px;
+  letter-spacing: 6px;
+}
+
+section.projects .bodyLine {
+  border-top: 3px solid #b3331a;
+  width: 40px;
+  margin: 0 auto;
+  margin-bottom: 75px;
+  font-family: 'Hamburg Hand Light';
 }
 
 section.projects img {
   width: 600px;
-  -webkit-box-shadow: 10px 10px 1px 0px #b3331a;
-  box-shadow: 10px 10px 1px 0px #b3331a;
+  border: 3px solid #444349;
+  padding: 5px;
 }
 
 section.projects .projectParent {
@@ -613,16 +640,17 @@ section.projects .projectParent {
   display: -ms-flexbox;
   display: flex;
   margin-top: 55px;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 section.projects .projectParent h3 {
-  font-family: 'Rockhill Sans';
-  font-size: 25px;
+  font-family: 'Hamburg Hand Light';
   color: #444349;
-  letter-spacing: 1.3px;
-  font-weight: lighter;
-  text-transform: lowercase;
+  font-size: 24px;
+  letter-spacing: 2px;
 }
 
 section.projects .projectParent p {
@@ -654,10 +682,6 @@ section.projects .projectParent h3 {
   text-align: center;
 }
 
-section.projects .projectParent.middle .link, section.projects .projectParent.middle h3 {
-  margin-right: 12%;
-}
-
 section.projects .link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -673,15 +697,23 @@ section.projects .link a {
   margin: 20px;
   padding: 13px 40px;
   border-radius: 20px;
-  font-family: 'Apercu Pro Bold';
-  font-size: 16px;
+  font-family: 'Hamburg Hand Light';
+  font-size: 15px;
   color: #EFEFF0;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
+  border: 3px solid #b3331a;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+section.projects .link a:hover {
+  background-color: #b3331a;
 }
 
 section.contact {
   height: auto;
-  background-color: #C6D7D4;
+  background-color: #DCEBEA;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,12 +726,18 @@ section.contact {
 section.contact h2 {
   padding-top: 50px;
   color: #444349;
-  text-align: left;
-  font-family: 'Rockhill Sans';
-  text-transform: lowercase;
-  font-size: 35px;
-  font-weight: lighter;
-  letter-spacing: 1.4px;
+  text-align: center;
+  font-family: 'Hamburg Hand Regular';
+  font-size: 30px;
+  margin-bottom: 50px;
+  letter-spacing: 6px;
+}
+
+section.contact .bodyLine {
+  border-top: 3px solid #b3331a;
+  width: 40px;
+  margin: 0 auto;
+  font-family: 'Hamburg Hand Light';
 }
 
 section.contact form {

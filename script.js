@@ -19,7 +19,7 @@ $(document).ready(function () {
   // All of the sections besides the contact section, as the nav bar never reaches the top of the contact section so it has a different top value. 
   let section = $('section#home, section#about, section#skills, section#projects')
     let nav = $('nav')
-    const nav_height = 55
+    const nav_height = 72
 
   $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop();
@@ -43,7 +43,7 @@ $(document).ready(function () {
     var cur_pos = $(this).scrollTop();
 
     $('section.contact').each(function () {
-      var top = $(this).offset().top - 55,
+      var top = $(this).offset().top - 72,
         bottom = top + $(this).outerHeight();
 
       if (cur_pos >= top && cur_pos <= bottom) {
@@ -61,7 +61,7 @@ $(document).ready(function () {
         id = $el.attr('href');
 
     $('html, body').animate({
-      scrollTop: $(id).offset().top - 53
+      scrollTop: $(id).offset().top - 69
     }, 500);
 
     return false;
