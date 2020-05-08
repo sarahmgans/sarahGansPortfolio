@@ -38,6 +38,11 @@
   src: url('../Fonts/Apercu\ Pro\ Italic.otf')
 }
 
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('../Fonts/CooperHewitt-Book.otf')
+}
+
 @import 'variables';
 @import 'global';
 @import 'setup';

@@ -38,6 +38,11 @@
   src: url("../Fonts/Apercu Pro Italic.otf");
 }
 
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url("../Fonts/CooperHewitt-Book.otf");
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -56,6 +61,11 @@ img {
 ul {
   margin: 0;
   padding: 0;
+}
+
+p {
+  font-family: 'Cooper Hewitt';
+  letter-spacing: 1px;
 }
 
 html {
@@ -333,10 +343,10 @@ header {
 
 h1 {
   font-size: 75px;
-  letter-spacing: 5px;
+  letter-spacing: 7px;
   font-family: 'Hamburg Hand Regular';
   margin-top: 45px;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 
 .headerImg img {
@@ -354,26 +364,18 @@ h2 {
 h2 {
   font-size: 25px;
   font-family: 'Hamburg Hand Light';
-  letter-spacing: 7px;
+  letter-spacing: 9px;
   margin: 0;
-}
-
-.line {
-  border-top: 3px solid #b3331a;
-  width: 50px;
-  margin: 0 auto;
-  padding-bottom: 48px;
-  margin-top: 30px;
-  border-radius: 1px;
 }
 
 a {
   text-decoration: none;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   color: #EFEFF0;
   -webkit-transition: 0.3s all ease-out;
   transition: 0.3s all ease-out;
   padding-bottom: 3px;
+  display: block;
 }
 
 nav {
@@ -388,8 +390,10 @@ nav {
 nav ul li {
   font-family: 'Hamburg Hand Light';
   color: #EFEFF0;
-  margin: 25px;
-  font-size: 17px;
+  margin: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 18px;
   letter-spacing: 4px;
 }
 
@@ -405,7 +409,9 @@ nav ul li a:hover {
 nav ul li a:hover,
 nav ul li a.active,
 nav ul li a:active {
-  border-bottom: 3px solid #b3331a;
+  color: #e25337;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #e25337;
 }
 
 header ul {
@@ -417,11 +423,12 @@ header ul {
   display: flex;
   position: fixed;
   background-color: #444349;
-  width: 100%;
+  width: 100vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1000;
+  white-space: no-wrap;
 }
 
 header i.fas {
@@ -498,7 +505,7 @@ section.about h2 {
 }
 
 section.about .bodyLine {
-  border-top: 3px solid #b3331a;
+  border-top: 1px solid #b3331a;
   width: 40px;
   border-radius: 20px;
   margin: 0 auto;
@@ -507,12 +514,9 @@ section.about .bodyLine {
 }
 
 section.about p {
-  font-family: 'Apercu Pro Regular';
   color: #444349;
   font-size: 18px;
   line-height: 29px;
-  font-weight: 400;
-  letter-spacing: 0.4px;
   margin-top: 0;
 }
 
@@ -528,7 +532,6 @@ section.about .aboutParent {
 section.about .picture img {
   width: 310px;
   margin-left: 120px;
-  border: 3px solid #b3331a;
   padding: 5px;
 }
 
@@ -552,7 +555,7 @@ section.skills h2 {
 }
 
 section.skills .bodyLine {
-  border-top: 3px solid #b3331a;
+  border-top: 1px solid #b3331a;
   width: 40px;
   margin: 0 auto;
   margin-bottom: 65px;
@@ -622,7 +625,7 @@ section.projects h2 {
 }
 
 section.projects .bodyLine {
-  border-top: 3px solid #b3331a;
+  border-top: 1px solid #b3331a;
   width: 40px;
   margin: 0 auto;
   margin-bottom: 75px;
@@ -631,8 +634,11 @@ section.projects .bodyLine {
 
 section.projects img {
   width: 600px;
-  border: 3px solid #444349;
-  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.139);
+}
+
+section.projects img.outline {
+  border: 1px solid rgba(0, 0, 0, 0.139);
 }
 
 section.projects .projectParent {
@@ -654,12 +660,10 @@ section.projects .projectParent h3 {
 }
 
 section.projects .projectParent p {
-  font-family: 'Apercu Pro Regular';
   font-size: 18px;
   color: #444349;
   width: 80%;
   line-height: 27px;
-  letter-spacing: 1px;
   margin: 0 auto;
   padding-bottom: 20px;
   text-align: center;
@@ -701,7 +705,7 @@ section.projects .link a {
   font-size: 15px;
   color: #EFEFF0;
   letter-spacing: 2px;
-  border: 3px solid #b3331a;
+  border: 3px solid #444349;
   text-transform: uppercase;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -709,6 +713,7 @@ section.projects .link a {
 
 section.projects .link a:hover {
   background-color: #b3331a;
+  border: 3px solid #b3331a;
 }
 
 section.contact {
@@ -734,7 +739,7 @@ section.contact h2 {
 }
 
 section.contact .bodyLine {
-  border-top: 3px solid #b3331a;
+  border-top: 1px solid #b3331a;
   width: 40px;
   margin: 0 auto;
   font-family: 'Hamburg Hand Light';
@@ -763,7 +768,7 @@ section.contact textarea {
   width: 100%;
   border: none;
   border-bottom: 1px solid #444349;
-  font-family: 'Apercu Pro Regular';
+  font-family: 'Cooper Hewitt';
   font-size: 18px;
   color: #444349;
   border-radius: 0px;
@@ -773,22 +778,18 @@ section.contact textarea {
 }
 
 section.contact textarea::-webkit-input-placeholder {
-  font-family: 'Apercu Pro Italic';
   color: black;
 }
 
 section.contact textarea:-ms-input-placeholder {
-  font-family: 'Apercu Pro Italic';
   color: black;
 }
 
 section.contact textarea::-ms-input-placeholder {
-  font-family: 'Apercu Pro Italic';
   color: black;
 }
 
 section.contact textarea::placeholder {
-  font-family: 'Apercu Pro Italic';
   color: black;
 }
 
@@ -829,7 +830,7 @@ section.contact .half input[type="email"] {
           box-shadow: 0 1px 0 0 transparent;
   width: 100%;
   height: 30px;
-  font-family: 'Apercu Pro Regular';
+  font-family: 'Cooper Hewitt';
   font-size: 18px;
   padding-bottom: 5px;
   color: #444349;
@@ -855,28 +856,24 @@ section.contact .formParent .half {
 }
 
 section.contact input::-webkit-input-placeholder {
-  font-family: 'Apercu Pro Italic';
   font-size: 18px;
   line-height: 24px;
   color: black;
 }
 
 section.contact input:-ms-input-placeholder {
-  font-family: 'Apercu Pro Italic';
   font-size: 18px;
   line-height: 24px;
   color: black;
 }
 
 section.contact input::-ms-input-placeholder {
-  font-family: 'Apercu Pro Italic';
   font-size: 18px;
   line-height: 24px;
   color: black;
 }
 
 section.contact input::placeholder {
-  font-family: 'Apercu Pro Italic';
   font-size: 18px;
   line-height: 24px;
   color: black;
@@ -905,7 +902,6 @@ section.contact .phone {
 }
 
 section.contact .phone p {
-  font-family: 'Apercu Pro Regular';
   font-size: 18px;
   color: #444349;
   margin: 0;
@@ -922,7 +918,6 @@ footer {
 }
 
 footer p {
-  font-family: 'Apercu Pro Light';
   font-size: 18px;
   text-align: center;
   margin: 0;

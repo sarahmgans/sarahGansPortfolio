@@ -12,7 +12,7 @@ section.about{
     letter-spacing: 6px;
   }
   .bodyLine {
-    border-top: 3px solid $accentColor;
+    border-top: 1px solid $accentColor;
     width: 40px;
     border-radius: 20px;
     margin: 0 auto;
@@ -20,12 +20,9 @@ section.about{
     font-family: 'Hamburg Hand Light'
   }
   p{
-    font-family: 'Apercu Pro Regular';
     color: $darkColor;
     font-size: 18px;
     line-height: 29px;
-    font-weight: 400;
-    letter-spacing: 0.4px;
     margin-top: 0;
   }
   .aboutParent {
@@ -36,7 +33,7 @@ section.about{
       img{
         width: 310px;
         margin-left: 120px;
-        border: 3px solid $accentColor;
+        // border: 2px solid $accentColor;
         padding: 5px;
       }
     }
