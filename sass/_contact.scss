@@ -3,21 +3,6 @@ section.contact {
   background-color: $mediumColor;
   display: flex;
   flex-direction: column;
-  h2 {
-    padding-top: 50px;
-    color: $darkColor;
-    text-align: center;
-    font-family: 'Hamburg Hand Regular';
-    font-size: 30px;
-    margin-bottom: 50px;
-    letter-spacing: 6px;
-  }
-   .bodyLine {
-    border-top: 1px solid $accentColor;
-    width: 40px;
-    margin: 0 auto;
-    font-family: 'Hamburg Hand Light'
-  }
   form{
     width: 55%;
     margin: 0 auto;
@@ -36,8 +21,7 @@ section.contact {
       width: 100%;
       border: none;
       border-bottom: 1px solid $darkColor;
-      // font-family: 'Apercu Pro Regular';
-      font-family: 'Cooper Hewitt';
+      font-family: 'Source Sans Pro';
       font-size: 18px;
       color: $darkColor;
       border-radius: 0px;
@@ -66,10 +50,12 @@ section.contact {
       text-align: center;
       transition: 0.3s;
       letter-spacing: 1px;
-      &:hover {
+      &:hover,
+      &:focus,
+      &:active {
         border-bottom: 3px solid $accentColor;
       }
-  }
+    }
   
   .half input[type="text"],
   .half input[type="email"] {
@@ -78,7 +64,7 @@ section.contact {
       box-shadow: 0 1px 0 0 transparent;
       width: 100%;
       height: 30px;
-      font-family: 'Cooper Hewitt';
+      font-family: 'Source Sans Pro';
       font-size: 18px;
       padding-bottom: 5px;
       color: $darkColor;
@@ -99,7 +85,6 @@ section.contact {
   }
 
   input::placeholder {
-      // font-family: 'Apercu Pro Italic';
       font-size: 18px;
       line-height: 24px;
       color: black;
@@ -114,13 +99,11 @@ section.contact {
     flex-direction: column;
     align-items: center;
     p{
-    font-size: 18px;
-    color: $darkColor;
     margin: 0;
     }
     p:nth-child(2) {
-      padding-bottom: 15px;
-      padding-top: 15px;
+      padding-bottom: 5px;
+      padding-top: 5px;
     }
     p:nth-child(3) {
       padding-bottom: 55px;

@@ -1,33 +1,13 @@
 section.projects {
   background: $lightColor;
   height: auto;
-  h2 {
-    padding-top: 50px;
-    color: $darkColor;
-    text-align: center;
-    font-family: 'Hamburg Hand Regular';
-    font-size: 30px;
-    margin-bottom: 50px;
-    letter-spacing: 6px;
-  } 
   .bodyLine {
-    border-top: 1px solid $accentColor;
-    width: 40px;
-    margin: 0 auto;
     margin-bottom: 75px;
-    font-family: 'Hamburg Hand Light'
   }
   img {
     width: 600px;
-    // border: 2px solid $darkColor;
-    // padding: 5px;
     border: 1px solid rgba(0, 0, 0, 0.139);
   }
-
-  img.outline {
-    border: 1px solid rgba(0, 0, 0, 0.139);
-  }
-
   .projectParent {
     display: flex;
     margin-top: 55px;
@@ -40,16 +20,12 @@ section.projects {
       letter-spacing: 2px;
     }
     p {
-    font-size: 18px;
-    color: $darkColor;
-    width: 80%;
-    line-height: 27px;
-    margin: 0 auto;
-    padding-bottom: 20px;
-    text-align: center;
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: 20px;
+      text-align: center;
   }
 }
-  
   div.margin {
     display: flex;
     flex-direction: column;
@@ -78,7 +54,6 @@ section.projects {
     color: $lightColor;
     letter-spacing: 2px;
     border: 3px solid $darkColor;
-    // border: 2px solid $accentColor;
     text-transform: uppercase;
     transition: 0.3s;
     &:hover{
@@ -86,6 +61,5 @@ section.projects {
       border: 3px solid $accentColor;
     }
   }
-  
 }
 

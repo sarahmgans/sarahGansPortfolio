@@ -3,21 +3,8 @@ section.skills {
   background-color: $mediumColor;
   display: flex;
   padding-bottom: 20px;
-  h2 {
-    margin-bottom: 50px;
-    padding-top: 50px;
-    color: $darkColor;
-    text-align: center;
-    font-family: 'Hamburg Hand Regular';
-    font-size: 30px;
-    letter-spacing: 6px;
-  }
-   .bodyLine {
-    border-top: 1px solid $accentColor;
-    width: 40px;
-    margin: 0 auto;
+  .bodyLine {
     margin-bottom: 65px;
-    font-family: 'Hamburg Hand Light'
   }
   ul{
     display: flex;
@@ -40,6 +27,7 @@ section.skills {
         font-size: 17px;
         letter-spacing: 0.4px;
         text-align: center;
+        line-height: 1;
       }
       p.js {
         margin-left: -15px;
