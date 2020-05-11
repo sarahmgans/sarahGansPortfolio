@@ -12,11 +12,11 @@ header {
 }
 
 h1 {
-    font-size: 75px;
+    font-size: 64px;
     letter-spacing: 7px;
     font-family: 'Hamburg Hand Regular';
     margin-top: 45px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .headerImg img {
@@ -26,15 +26,14 @@ h1 {
 h1, 
 h2.header {
     color: $lightColor;
-    text-transform: uppercase;
     padding: 0;
     text-align: center;
 }
 
 h2.header {
-    font-size: 25px;
+    font-size: 27px;
     font-family: 'Hamburg Hand Light';
-    letter-spacing: 9px;
+    letter-spacing: 6px;
     margin: 0;
 }
 
@@ -45,7 +44,6 @@ a {
     transition: 0.3s all ease-out; 
     padding-bottom: 3px;
     display: block;
-   
 }
 
 nav {
@@ -59,6 +57,7 @@ nav ul li {
     margin: 30px;
     font-size: 18px;
     letter-spacing: 4px;
+    position: relative;
 }
 
 nav ul li a:focus{
@@ -70,13 +69,16 @@ nav ul li a:hover {
   outline: 0;
 }
 
-nav ul li a:hover, 
-nav ul li a.active,
-nav ul li a:active {
-    // border-bottom: 2px solid $accentColor;
-    color: #e25337;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #e25337;
+nav ul li a:hover::after, 
+nav ul li a.active::after,
+nav ul li a:active::after {
+    content: '';
+    width: calc(100% - 8px);
+    display: block;
+    height: 2px;
+    background-color: $accentColor;
+    position: absolute;
+    bottom: 2px;
 }
 
 

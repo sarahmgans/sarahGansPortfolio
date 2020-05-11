@@ -25,20 +25,15 @@ section.skills {
       p {
         font-family: 'Hamburg Hand Light';
         font-size: 17px;
-        letter-spacing: 0.4px;
+        letter-spacing: 1.5px;
         text-align: center;
         line-height: 1;
       }
       p.js {
-        margin-left: -15px;
+        margin-left: -21px;
       }
       p.fire {
-        margin-left: -10px;
-      }
-      &:hover,
-      &:focus {
-        transform: scale(1.2);
-        color: $accentColor;
+        margin-left: -15px;
       }
     }
   }

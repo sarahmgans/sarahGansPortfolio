@@ -12,11 +12,14 @@ section.about{
   .aboutParent {
     display: flex;
     justify-content: center;
+    align-items: center;
+    div:nth-child(1) {
+      margin-right: 10%;
+    }
   }
   .picture {
     img{
       width: 310px;
-      margin-left: 120px;
       padding: 5px;
     }
   }

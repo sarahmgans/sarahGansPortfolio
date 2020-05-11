@@ -22,11 +22,11 @@ $(document).ready(function () {
     const nav_height = 89
 
   $(window).on('scroll', function () {
-    var cur_pos = $(this).scrollTop();
+    const cur_pos = $(this).scrollTop();
 
     section.each(function () {
-      var top = $(this).offset().top - nav_height,
-        bottom = top + $(this).outerHeight();
+      const top = $(this).offset().top - nav_height;
+      const bottom = top + $(this).outerHeight();
 
       if (cur_pos >= top && cur_pos <= bottom) {
         nav.find('a').removeClass('active');

@@ -40,20 +40,25 @@ section.contact {
   .submit {
       margin: 55px auto 50px auto;
       background-color: transparent;
-      border: 3px solid transparent;
       width: auto;
       font-family: 'Hamburg Hand Light';
-      font-weight: lighter;
-      font-size: 28px;
-      color: $accentColor;
+      font-weight: 400;
+      font-size: 22px;
+      color: $darkColor;
       text-transform: uppercase;
       text-align: center;
       transition: 0.3s;
-      letter-spacing: 1px;
+      letter-spacing: 3px;
+      border: none;
+      padding-bottom: 3px;
+      padding-right: 0;
+      padding-left: 0;
+      border-bottom: 2px solid $darkColor;
       &:hover,
       &:focus,
       &:active {
-        border-bottom: 3px solid $accentColor;
+        color: $accentColor;
+        border-bottom: 2px solid $accentColor;
       }
     }
   

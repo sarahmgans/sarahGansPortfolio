@@ -43,51 +43,6 @@
   src: url("../Fonts/CooperHewitt-Book.otf");
 }
 
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-img {
-  display: inline-block;
-}
-
-.wrapper {
-  max-width: 1280px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-h2 {
-  color: #444349;
-  text-align: center;
-  font-family: 'Hamburg Hand Regular';
-  font-size: 30px;
-  letter-spacing: 6px;
-  margin: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-p {
-  font-family: 'Source Sans Pro';
-  color: #444349;
-  font-size: 18px;
-  line-height: 27px;
-}
-
-.bodyLine {
-  border-top: 1px solid #b3331a;
-  width: 40px;
-  border-radius: 20px;
-  margin: 0 auto;
-}
-
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -339,6 +294,52 @@ html {
   overflow: hidden;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  display: inline-block;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #444349;
+  text-align: center;
+  font-family: 'Hamburg Hand Light';
+  font-size: 27px;
+  letter-spacing: 6px;
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Source Sans Pro';
+  color: #444349;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.bodyLine {
+  border-top: 2px solid #b3331a;
+  width: 50px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
 header {
   background-image: url(../assets/stardust_@2X.png);
   background-attachment: fixed;
@@ -362,11 +363,11 @@ header {
 }
 
 h1 {
-  font-size: 75px;
+  font-size: 64px;
   letter-spacing: 7px;
   font-family: 'Hamburg Hand Regular';
   margin-top: 45px;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
 }
 
 .headerImg img {
@@ -376,15 +377,14 @@ h1 {
 h1,
 h2.header {
   color: #EFEFF0;
-  text-transform: uppercase;
   padding: 0;
   text-align: center;
 }
 
 h2.header {
-  font-size: 25px;
+  font-size: 27px;
   font-family: 'Hamburg Hand Light';
-  letter-spacing: 9px;
+  letter-spacing: 6px;
   margin: 0;
 }
 
@@ -413,6 +413,7 @@ nav ul li {
   margin: 30px;
   font-size: 18px;
   letter-spacing: 4px;
+  position: relative;
 }
 
 nav ul li a:focus {
@@ -424,12 +425,16 @@ nav ul li a:hover {
   outline: 0;
 }
 
-nav ul li a:hover,
-nav ul li a.active,
-nav ul li a:active {
-  color: #e25337;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #e25337;
+nav ul li a:hover::after,
+nav ul li a.active::after,
+nav ul li a:active::after {
+  content: '';
+  width: calc(100% - 8px);
+  display: block;
+  height: 2px;
+  background-color: #b3331a;
+  position: absolute;
+  bottom: 2px;
 }
 
 header ul {
@@ -528,11 +533,17 @@ section.about .aboutParent {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section.about .aboutParent div:nth-child(1) {
+  margin-right: 10%;
 }
 
 section.about .picture img {
   width: 310px;
-  margin-left: 120px;
   padding: 5px;
 }
 
@@ -578,23 +589,17 @@ section.skills ul li {
 section.skills ul li p {
   font-family: 'Hamburg Hand Light';
   font-size: 17px;
-  letter-spacing: 0.4px;
+  letter-spacing: 1.5px;
   text-align: center;
   line-height: 1;
 }
 
 section.skills ul li p.js {
-  margin-left: -15px;
+  margin-left: -21px;
 }
 
 section.skills ul li p.fire {
-  margin-left: -10px;
-}
-
-section.skills ul li:hover, section.skills ul li:focus {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  color: #b3331a;
+  margin-left: -15px;
 }
 
 section.projects {
@@ -616,7 +621,7 @@ section.projects .projectParent {
   display: -ms-flexbox;
   display: flex;
   margin-top: 55px;
-  padding-bottom: 100px;
+  padding-bottom: 75px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -625,8 +630,10 @@ section.projects .projectParent {
 section.projects .projectParent h3 {
   font-family: 'Hamburg Hand Light';
   color: #444349;
-  font-size: 24px;
   letter-spacing: 2px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: lighter;
 }
 
 section.projects .projectParent p {
@@ -649,10 +656,6 @@ section.projects div.margin {
           align-items: center;
 }
 
-section.projects .projectParent h3 {
-  text-align: center;
-}
-
 section.projects .link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -672,7 +675,7 @@ section.projects .link a {
   font-size: 15px;
   color: #EFEFF0;
   letter-spacing: 2px;
-  border: 3px solid #444349;
+  border: 2px solid #444349;
   text-transform: uppercase;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -680,7 +683,6 @@ section.projects .link a {
 
 section.projects .link a:hover {
   background-color: #b3331a;
-  border: 3px solid #b3331a;
 }
 
 section.contact {
@@ -755,21 +757,26 @@ section.contact textarea:focus:focus + label {
 section.contact .submit {
   margin: 55px auto 50px auto;
   background-color: transparent;
-  border: 3px solid transparent;
   width: auto;
   font-family: 'Hamburg Hand Light';
-  font-weight: lighter;
-  font-size: 28px;
-  color: #b3331a;
+  font-weight: 400;
+  font-size: 22px;
+  color: #444349;
   text-transform: uppercase;
   text-align: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
+  border: none;
+  padding-bottom: 3px;
+  padding-right: 0;
+  padding-left: 0;
+  border-bottom: 2px solid #444349;
 }
 
 section.contact .submit:hover, section.contact .submit:focus, section.contact .submit:active {
-  border-bottom: 3px solid #b3331a;
+  color: #b3331a;
+  border-bottom: 2px solid #b3331a;
 }
 
 section.contact .half input[type="text"],
