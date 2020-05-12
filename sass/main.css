@@ -297,6 +297,7 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #444349;
 }
 
 img {
@@ -326,7 +327,8 @@ h2 {
   font-weight: 400;
 }
 
-p {
+p,
+a[href^="tel"] {
   font-family: 'Source Sans Pro';
   color: #444349;
   font-size: 19px;
@@ -335,9 +337,36 @@ p {
 
 .bodyLine {
   border-top: 2px solid #b3331a;
-  width: 50px;
+  width: 70px;
   border-radius: 20px;
   margin: 0 auto;
+}
+
+.link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.link a {
+  background-color: #b3331a;
+  margin: 20px;
+  padding: 13px 40px;
+  border-radius: 20px;
+  font-family: 'Hamburg Hand Light';
+  font-size: 15px;
+  color: #EFEFF0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.link a:hover {
+  background-color: #444349;
 }
 
 header {
@@ -526,6 +555,16 @@ section.about p {
   margin-top: 0;
 }
 
+section.about .link.resume {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+section.about .link.resume a {
+  margin: 10px 0 0 0;
+}
+
 section.about .aboutParent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -533,9 +572,6 @@ section.about .aboutParent {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 section.about .aboutParent div:nth-child(1) {
@@ -606,8 +642,9 @@ section.projects {
   height: auto;
 }
 
-section.projects .bodyLine {
+section.projects .bodyLine.seperator {
   margin-bottom: 75px;
+  width: 50px;
 }
 
 section.projects img {
@@ -651,33 +688,6 @@ section.projects .projectParent p {
   margin: 0 auto;
   padding-bottom: 20px;
   text-align: center;
-}
-
-section.projects .link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-section.projects .link a {
-  background-color: #b3331a;
-  margin: 20px;
-  padding: 13px 40px;
-  border-radius: 20px;
-  font-family: 'Hamburg Hand Light';
-  font-size: 15px;
-  color: #EFEFF0;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-section.projects .link a:hover {
-  background-color: #444349;
 }
 
 section.contact {
@@ -758,25 +768,22 @@ section.contact textarea:focus:focus + label {
 
 section.contact .submit {
   margin: 60px auto 45px auto;
-  background-color: transparent;
-  width: auto;
+  background-color: #b3331a;
+  padding: 13px 40px;
+  border-radius: 20px;
   font-family: 'Hamburg Hand Light';
-  font-weight: 400;
-  font-size: 22px;
-  color: #b3331a;
+  font-size: 15px;
+  color: #EFEFF0;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  text-align: center;
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  letter-spacing: 3px;
   border: none;
-  padding-bottom: 3px;
-  padding-right: 0;
-  padding-left: 0;
+  text-align: center;
 }
 
-section.contact .submit:hover, section.contact .submit:focus, section.contact .submit:active {
-  letter-spacing: 1px;
+section.contact .submit:hover {
+  background-color: #444349;
 }
 
 section.contact .half input[type="text"],
@@ -862,9 +869,11 @@ section.contact .phone p {
   margin: 0;
 }
 
-section.contact .phone p:nth-child(2) {
+section.contact .phone a[href^="tel"] {
   padding-bottom: 5px;
   padding-top: 5px;
+  color: inherit;
+  text-decoration: none;
 }
 
 section.contact .phone p:nth-child(3) {

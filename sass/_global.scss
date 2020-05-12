@@ -1,6 +1,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $darkColor;
 } 
 
 img {
@@ -30,7 +31,8 @@ h2 {
   font-weight: 400;
 }
 
-p {
+p,
+a[href^="tel"] {
   font-family: 'Source Sans Pro';
   color: $darkColor;
   font-size: 19px;
@@ -41,10 +43,31 @@ p {
 
 .bodyLine {
   border-top: 2px solid $accentColor;
-  width: 50px;
+  width: 70px;
   border-radius: 20px;
   margin: 0 auto;
 }
+
+.link {
+    display: flex;
+    justify-content: center;
+  }
+
+.link a {
+    background-color: $accentColor;
+    margin: 20px;
+    padding: 13px 40px;
+    border-radius: 20px;
+    font-family: 'Hamburg Hand Light';
+    font-size: 15px;
+    color: $lightColor;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    &:hover{
+      background-color: $darkColor;
+    }
+  }
 
 
 

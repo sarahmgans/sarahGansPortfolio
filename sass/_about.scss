@@ -9,10 +9,15 @@ section.about{
     color: $darkColor;
     margin-top: 0;
   }
+  .link.resume {
+    justify-content: left;
+    a {
+      margin: 10px 0 0 0;
+    }
+  }
   .aboutParent {
     display: flex;
     justify-content: center;
-    align-items: center;
     div:nth-child(1) {
       margin-right: 10%;
     }
@@ -20,6 +25,8 @@ section.about{
   .picture {
     img{
       width: 310px;
+      // filter: drop-shadow(0 0 20px #44434983);
+      // border-radius: 50%;
     }
   }
 }

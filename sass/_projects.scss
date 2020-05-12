@@ -1,8 +1,9 @@
 section.projects {
   background: $lightColor;
   height: auto;
-  .bodyLine {
+  .bodyLine.seperator {
     margin-bottom: 75px;
+    width: 50px;
   }
   img {
     width: 550px;
@@ -34,26 +35,6 @@ section.projects {
       margin: 0 auto;
       padding-bottom: 20px;
       text-align: center;
-  }
-}
-  .link {
-    display: flex;
-    justify-content: center;
-  }
-
-  .link a {
-    background-color: $accentColor;
-    margin: 20px;
-    padding: 13px 40px;
-    border-radius: 20px;
-    font-family: 'Hamburg Hand Light';
-    font-size: 15px;
-    color: $lightColor;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: 0.3s;
-    &:hover{
-      background-color: $darkColor;
     }
   }
 }
