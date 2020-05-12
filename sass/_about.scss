@@ -9,10 +9,21 @@ section.about{
     color: $darkColor;
     margin-top: 0;
   }
-  .link.resume {
+  .resume {
     justify-content: left;
     a {
-      margin: 10px 0 0 0;
+      color: $accentColor;
+      font-family: 'Hamburg Hand Light';
+      border-bottom: 1px solid $accentColor;
+      width: 205px;
+      padding-bottom: 1px;
+      letter-spacing: 1px;
+      padding-top: 20px;
+      &:hover,
+      &:focus {
+        border-bottom: 1px solid transparent;
+        color: #e44a2b;
+      }
     }
   }
   .aboutParent {

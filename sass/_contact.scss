@@ -45,7 +45,7 @@ section.contact {
   }
   .submit {
     margin: 60px auto 45px auto;
-    background-color: $accentColor;
+    background-color: $darkColor;
     padding: 13px 40px;
     border-radius: 20px;
     font-family: 'Hamburg Hand Light';
@@ -57,7 +57,7 @@ section.contact {
     border: none;
     text-align: center;
     &:hover{
-      background-color: $darkColor;
+      background-color: $accentColor;
     }
   }
   

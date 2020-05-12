@@ -10,7 +10,7 @@ img {
 
 .wrapper {
   max-width: 1280px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -64,6 +64,8 @@ a[href^="tel"] {
     letter-spacing: 2px;
     text-transform: uppercase;
     transition: 0.3s;
+    width: 157px;
+    text-align: center;
     &:hover{
       background-color: $darkColor;
     }

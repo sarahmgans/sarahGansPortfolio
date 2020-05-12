@@ -306,7 +306,7 @@ img {
 
 .wrapper {
   max-width: 1280px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -363,6 +363,8 @@ a[href^="tel"] {
   text-transform: uppercase;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  width: 157px;
+  text-align: center;
 }
 
 .link a:hover {
@@ -555,14 +557,25 @@ section.about p {
   margin-top: 0;
 }
 
-section.about .link.resume {
+section.about .resume {
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
 }
 
-section.about .link.resume a {
-  margin: 10px 0 0 0;
+section.about .resume a {
+  color: #b3331a;
+  font-family: 'Hamburg Hand Light';
+  border-bottom: 1px solid #b3331a;
+  width: 205px;
+  padding-bottom: 1px;
+  letter-spacing: 1px;
+  padding-top: 20px;
+}
+
+section.about .resume a:hover, section.about .resume a:focus {
+  border-bottom: 1px solid transparent;
+  color: #e44a2b;
 }
 
 section.about .aboutParent {
@@ -604,9 +617,9 @@ section.skills ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 section.skills ul li {
@@ -615,8 +628,6 @@ section.skills ul li {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   list-style-type: none;
-  margin-left: 75px;
-  margin-right: 75px;
   margin-bottom: 50px;
   width: 80px;
 }
@@ -660,9 +671,9 @@ section.projects .projectParent {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 section.projects .projectParent h3 {
@@ -768,7 +779,7 @@ section.contact textarea:focus:focus + label {
 
 section.contact .submit {
   margin: 60px auto 45px auto;
-  background-color: #b3331a;
+  background-color: #444349;
   padding: 13px 40px;
   border-radius: 20px;
   font-family: 'Hamburg Hand Light';
@@ -783,7 +794,7 @@ section.contact .submit {
 }
 
 section.contact .submit:hover {
-  background-color: #444349;
+  background-color: #b3331a;
 }
 
 section.contact .half input[type="text"],

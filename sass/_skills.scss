@@ -12,14 +12,12 @@ section.skills {
     padding: 0;
     flex-wrap: wrap;
     margin: 0 auto;
-    justify-content: center;
+    justify-content: space-between;
     li {
       font-size: 80px;
       color: $darkColor;
       transition: 0.3s;
       list-style-type: none;
-      margin-left: 75px;
-      margin-right: 75px;
       margin-bottom: 50px;
       width: 80px;
       p {
