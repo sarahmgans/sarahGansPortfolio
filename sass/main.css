@@ -544,7 +544,7 @@ section.about .aboutParent div:nth-child(1) {
 
 section.about .picture img {
   width: 310px;
-  padding: 5px;
+  border: 10px solid #44434965;
 }
 
 section.skills {
@@ -613,7 +613,7 @@ section.projects .bodyLine {
 
 section.projects img {
   width: 600px;
-  border: 1px solid rgba(0, 0, 0, 0.139);
+  border: 10px solid #44434965;
 }
 
 section.projects .projectParent {
@@ -755,7 +755,7 @@ section.contact textarea:focus:focus + label {
 }
 
 section.contact .submit {
-  margin: 55px auto 50px auto;
+  margin: 60px auto 45px auto;
   background-color: transparent;
   width: auto;
   font-family: 'Hamburg Hand Light';
