@@ -544,7 +544,6 @@ section.about .aboutParent div:nth-child(1) {
 
 section.about .picture img {
   width: 310px;
-  border: 10px solid #44434965;
 }
 
 section.skills {
@@ -557,7 +556,7 @@ section.skills {
 }
 
 section.skills .bodyLine {
-  margin-bottom: 65px;
+  margin-bottom: 110px;
 }
 
 section.skills ul {
@@ -612,19 +611,21 @@ section.projects .bodyLine {
 }
 
 section.projects img {
-  width: 600px;
-  border: 10px solid #44434965;
+  width: 550px;
 }
 
 section.projects .projectParent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 55px;
-  padding-bottom: 75px;
+  margin-top: 110px;
+  padding-bottom: 110px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 section.projects .projectParent h3 {
@@ -646,7 +647,7 @@ section.projects .projectParent h4 {
 }
 
 section.projects .projectParent p {
-  width: 80%;
+  width: 550px;
   margin: 0 auto;
   padding-bottom: 20px;
   text-align: center;
@@ -695,6 +696,7 @@ section.contact p.working {
   text-align: center;
   margin: 0;
   padding-top: 50px;
+  padding-bottom: 15px;
 }
 
 section.contact form {

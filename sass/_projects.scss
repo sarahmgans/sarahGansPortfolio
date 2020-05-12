@@ -5,14 +5,14 @@ section.projects {
     margin-bottom: 75px;
   }
   img {
-    width: 600px;
-    border: 10px solid #44434965;
+    width: 550px;
   }
   .projectParent {
     display: flex;
-    margin-top: 55px;
-    padding-bottom: 75px;
+    margin-top: 110px;
+    padding-bottom: 110px;
     align-items: center;
+    justify-content: space-evenly;
     h3 {
       font-family: 'Hamburg Hand Light';
       color: $darkColor;
@@ -30,7 +30,7 @@ section.projects {
       text-align: center;
     }
     p {
-      width: 80%;
+      width: 550px;
       margin: 0 auto;
       padding-bottom: 20px;
       text-align: center;
