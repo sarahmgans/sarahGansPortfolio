@@ -1,7 +1,7 @@
 $(document).ready(function () {
   const scroll = function (scrollTo) {
     $('html, body').animate({
-      scrollTop: $(scrollTo).offset().top-97
+      scrollTop: $(scrollTo).offset().top-87
     }, 500);
   }
 
