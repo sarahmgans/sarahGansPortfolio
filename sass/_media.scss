@@ -1,0 +1,31 @@
+@media(max-width: 1260px) {
+  section.projects {
+    img {
+      width: 500px;
+    }
+    .projectParent p {
+      width: 500px;
+    }
+  }
+}
+
+@media(max-width: 1160px) {
+  section.skills .gridWrapper {
+    display: grid;
+    grid-gap: 0px;
+    justify-content: center;
+    padding-bottom: 20px;
+    grid-template-columns: 170px 170px 170px 170px 170px;
+    .icon {
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+  }
+  section.projects img,
+  section.projects .projectParent p {
+    width: 400px;
+  }
+}

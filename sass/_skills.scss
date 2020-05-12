@@ -4,36 +4,30 @@ section.skills {
   display: flex;
   padding-bottom: 20px;
   .bodyLine {
-    margin-bottom: 110px;
+    margin-bottom: 95px;
   }
-  ul{
+  .gridWrapper {
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px 200px;
+    grid-gap: 15px;
+    justify-content: center;
+    padding-bottom: 20px;
+    .icon {
+    font-size: 80px;
     display: flex;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    justify-content: space-between;
-    li {
-      font-size: 80px;
-      color: $darkColor;
-      transition: 0.3s;
-      list-style-type: none;
-      margin-bottom: 50px;
-      width: 80px;
-      p {
-        font-family: 'Hamburg Hand Light';
-        font-size: 17px;
-        letter-spacing: 1.5px;
-        text-align: center;
-        line-height: 1;
-      }
-      p.js {
-        margin-left: -21px;
-      }
-      p.fire {
-        margin-left: -15px;
-      }
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     }
   }
+  
 }
+
+//  p.js {
+  //       margin-left: -21px;
+  //     }
+  //     p.fire {
+  //       margin-left: -15px;
+  //     }
 

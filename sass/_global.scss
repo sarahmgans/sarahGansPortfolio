@@ -10,7 +10,7 @@ img {
 
 .wrapper {
   max-width: 1280px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -32,7 +32,8 @@ h2 {
 }
 
 p,
-a[href^="tel"] {
+a[href^="tel"],
+a[href^="email"] {
   font-family: 'Source Sans Pro';
   color: $darkColor;
   font-size: 19px;
