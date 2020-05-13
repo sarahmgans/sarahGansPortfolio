@@ -2,8 +2,11 @@ section.projects {
   background: $lightColor;
   height: auto;
   .bodyLine.seperator {
-    margin-bottom: 75px;
+    margin-bottom: 65px;
     width: 50px;
+  }
+  div.projectParent:nth-child(3) {
+    margin-top: 110px;
   }
   img {
     width: 550px;

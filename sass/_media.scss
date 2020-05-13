@@ -56,7 +56,6 @@
 
   section.skills .gridWrapper {
     grid-gap: 0px;
-    padding-bottom: 20px;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 200px 200px 200px 200px;
     .icon {
@@ -72,7 +71,7 @@
         width: 80%;
       }
       img {
-        padding-bottom: 70px;
+        padding-bottom: 65px;
       }
       .resume a {
         margin: 0 auto;
@@ -155,8 +154,8 @@
     width: 400px;
   }
   section.projects .projectParent {
-    margin-top: 60px;
-    padding-bottom: 60px;
+    margin-top: 65px;
+    padding-bottom: 70px;
   }
   section.contact form {
     width: 90%;
@@ -181,7 +180,7 @@
     }
   }
   .link a {
-    margin: 10px;
+    margin: 10px 10px 0 10px;
     padding: 11px 0;
     font-size: 14px;
     width: 154px;
