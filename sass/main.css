@@ -564,7 +564,7 @@ header i.fas {
 section.about {
   height: auto;
   background-color: #EFEFF0;
-  padding-bottom: 50px;
+  padding-bottom: 55px;
 }
 
 section.about .bodyLine {
@@ -1043,7 +1043,7 @@ footer p {
     width: 80%;
   }
   section.about .aboutParent img {
-    padding-bottom: 70px;
+    padding-bottom: 75px;
   }
   section.about .aboutParent .resume a {
     margin: 0 auto;
