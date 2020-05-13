@@ -936,6 +936,11 @@ section.contact .phone p:nth-child(1) {
   text-align: center;
 }
 
+section.contact .padded {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
 footer {
   background-color: #444349;
   width: 100%;
