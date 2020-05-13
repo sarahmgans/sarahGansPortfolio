@@ -621,7 +621,6 @@ section.skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 15px;
 }
 
 section.skills .bodyLine {
