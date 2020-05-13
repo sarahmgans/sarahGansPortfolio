@@ -13,36 +13,6 @@
   src: url("../Fonts/HamburgHand-Light.otf");
 }
 
-@font-face {
-  font-family: 'Rockhill Sans';
-  src: url("../Fonts/RockhillSans-Rough.otf");
-}
-
-@font-face {
-  font-family: 'Apercu Pro Light';
-  src: url("../Fonts/Apercu Pro Light.otf");
-}
-
-@font-face {
-  font-family: 'Apercu Pro Regular';
-  src: url("../Fonts/Apercu Pro Regular.otf");
-}
-
-@font-face {
-  font-family: 'Apercu Pro Bold';
-  src: url("../Fonts/Apercu Pro Bold.otf");
-}
-
-@font-face {
-  font-family: 'Apercu Pro Italic';
-  src: url("../Fonts/Apercu Pro Italic.otf");
-}
-
-@font-face {
-  font-family: 'Cooper Hewitt';
-  src: url("../Fonts/CooperHewitt-Book.otf");
-}
-
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -805,7 +775,7 @@ section.contact textarea:focus:focus + label {
 }
 
 section.contact .submit {
-  margin: 50px auto 45px auto;
+  margin: 50px auto 50px auto;
   background-color: #444349;
   padding: 13px 40px;
   border-radius: 20px;
@@ -821,7 +791,7 @@ section.contact .submit {
   cursor: pointer;
 }
 
-section.contact .submit:hover {
+section.contact .submit:hover, section.contact .submit:focus {
   background-color: #b3331a;
 }
 
@@ -918,15 +888,18 @@ section.contact .phone p {
 
 section.contact .phone a[href^="tel"] {
   padding-bottom: 0px;
-  margin-top: 20px;
+  margin-top: 25px;
   color: inherit;
   text-decoration: none;
+  line-height: 1;
 }
 
 section.contact .phone a[href^="email"] {
   margin-bottom: 100px;
   color: inherit;
   text-decoration: underline;
+  line-height: 1;
+  margin-top: 5px;
 }
 
 section.contact .phone p:nth-child(1) {
