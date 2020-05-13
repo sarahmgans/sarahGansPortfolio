@@ -112,12 +112,12 @@ section.contact {
     }
     a[href^="tel"] {
       padding-bottom: 0px;
-      padding-top: 25px;
+      margin-top: 25px;
       color: inherit;
       text-decoration: none;
     }
     a[href^="email"] {
-      padding-bottom: 55px;
+      margin-bottom: 55px;
       color: inherit;
       text-decoration: underline;
     }

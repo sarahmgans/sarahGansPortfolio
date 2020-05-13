@@ -368,7 +368,7 @@ a[href^="email"] {
   text-align: center;
 }
 
-.link a:hover {
+.link a:hover, .link a:focus {
   background-color: #444349;
 }
 
@@ -921,13 +921,13 @@ section.contact .phone p {
 
 section.contact .phone a[href^="tel"] {
   padding-bottom: 0px;
-  padding-top: 25px;
+  margin-top: 25px;
   color: inherit;
   text-decoration: none;
 }
 
 section.contact .phone a[href^="email"] {
-  padding-bottom: 55px;
+  margin-bottom: 55px;
   color: inherit;
   text-decoration: underline;
 }

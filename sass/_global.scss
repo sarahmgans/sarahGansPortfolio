@@ -67,7 +67,8 @@ a[href^="email"] {
     transition: 0.3s;
     width: 157px;
     text-align: center;
-    &:hover{
+    &:hover,
+    &:focus {
       background-color: $darkColor;
     }
   }
