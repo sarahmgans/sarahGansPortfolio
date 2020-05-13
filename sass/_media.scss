@@ -53,7 +53,6 @@
       padding-top: 0;
     }
   }
-
   section.skills .gridWrapper {
     grid-gap: 0px;
     grid-template-columns: 200px 200px 200px;
@@ -71,7 +70,7 @@
         width: 80%;
       }
       img {
-        padding-bottom: 35px;
+        padding-bottom: 30px;
       }
       .resume a {
         margin: 0 auto;
@@ -83,6 +82,34 @@
 @media(max-width: 860px) {
   h1 {
     margin-top: 50px;
+  }
+  h2 {
+    padding-top: 75px;
+  }
+  section.about {
+    padding-bottom: 75px;
+    .bodyLine {
+      margin-bottom: 75px;
+    }
+  }
+  section.skills {
+    padding-bottom: 25px;
+    .bodyLine {
+      margin-bottom: 68px;
+    }
+  }
+  section.projects .projectParent {
+    margin-top: 75px;
+    padding-bottom: 75px;
+  }
+  section.contact .phone a[href^="email"] {
+    margin-bottom: 75px;
+  }
+  section.contact p.working {
+    padding-top: 75px;
+  }
+  section.contact .formParent {
+    margin-top: 15px;
   }
   .hamburger-menu {
       display: block;
@@ -163,9 +190,12 @@
   .fas.fa-times {
     font-size: 30px;
   }
-  section.skills .gridWrapper {
-    grid-template-columns: 180px 180px;
-    grid-template-rows: 180px 180px 180px 180px 180px 180px;
+  section.skills {
+    padding-bottom: 35px;
+    .gridWrapper {
+      grid-template-columns: 180px 180px;
+      grid-template-rows: 180px 180px 180px 180px 180px 180px;
+    }
   }
   section.projects {
     padding-right: 20px;
@@ -213,16 +243,16 @@
   .link a {
     width: 125px;
   }
-  section.skills .gridWrapper {
-    grid-template-columns: 145px 145px;
-    grid-template-rows: 150px 150px 150px 150px 150px 150px;
+  section.skills {
+    padding-bottom: 45px;
+    .gridWrapper {
+      grid-template-columns: 145px 145px;
+      grid-template-rows: 150px 150px 150px 150px 150px 150px;
+    }
   }
   .picture > img:nth-child(1),
   section.about .aboutParent img {
     width: 288px;
-  }
-  section.skills {
-    padding-bottom: 23px;
   }
 }
 

@@ -2,8 +2,9 @@ section.skills {
   height: auto;
   background-color: $mediumColor;
   display: flex;
+  padding-bottom: 50px;
   .bodyLine {
-    margin-bottom: 75px;
+    margin-bottom: 80px;
   }
   .gridWrapper {
     display: grid;

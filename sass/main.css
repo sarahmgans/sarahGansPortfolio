@@ -322,8 +322,8 @@ h2 {
   font-size: 27px;
   letter-spacing: 6px;
   margin: 0;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 30px;
   font-weight: 400;
 }
 
@@ -564,11 +564,11 @@ header i.fas {
 section.about {
   height: auto;
   background-color: #EFEFF0;
-  padding-bottom: 55px;
+  padding-bottom: 100px;
 }
 
 section.about .bodyLine {
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 section.about p {
@@ -621,10 +621,11 @@ section.skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-bottom: 50px;
 }
 
 section.skills .bodyLine {
-  margin-bottom: 75px;
+  margin-bottom: 80px;
 }
 
 section.skills .gridWrapper {
@@ -668,12 +669,7 @@ section.projects {
 }
 
 section.projects .bodyLine.seperator {
-  margin-bottom: 50px;
   width: 50px;
-}
-
-section.projects div.projectParent:nth-child(3) {
-  margin-top: 80px;
 }
 
 section.projects img {
@@ -684,8 +680,8 @@ section.projects .projectParent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
-  padding-bottom: 50px;
+  margin-top: 100px;
+  padding-bottom: 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -740,7 +736,7 @@ section.contact {
 section.contact p.working {
   text-align: center;
   margin: 0;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 15px;
 }
 
@@ -923,13 +919,13 @@ section.contact .phone p {
 
 section.contact .phone a[href^="tel"] {
   padding-bottom: 0px;
-  margin-top: 25px;
+  margin-top: 20px;
   color: inherit;
   text-decoration: none;
 }
 
 section.contact .phone a[href^="email"] {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   color: inherit;
   text-decoration: underline;
 }
@@ -1042,7 +1038,7 @@ footer p {
     width: 80%;
   }
   section.about .aboutParent img {
-    padding-bottom: 35px;
+    padding-bottom: 30px;
   }
   section.about .aboutParent .resume a {
     margin: 0 auto;
@@ -1052,6 +1048,34 @@ footer p {
 @media (max-width: 860px) {
   h1 {
     margin-top: 50px;
+  }
+  h2 {
+    padding-top: 75px;
+  }
+  section.about {
+    padding-bottom: 75px;
+  }
+  section.about .bodyLine {
+    margin-bottom: 75px;
+  }
+  section.skills {
+    padding-bottom: 25px;
+  }
+  section.skills .bodyLine {
+    margin-bottom: 68px;
+  }
+  section.projects .projectParent {
+    margin-top: 75px;
+    padding-bottom: 75px;
+  }
+  section.contact .phone a[href^="email"] {
+    margin-bottom: 75px;
+  }
+  section.contact p.working {
+    padding-top: 75px;
+  }
+  section.contact .formParent {
+    margin-top: 15px;
   }
   .hamburger-menu {
     display: block;
@@ -1138,6 +1162,9 @@ footer p {
   .fas.fa-times {
     font-size: 30px;
   }
+  section.skills {
+    padding-bottom: 35px;
+  }
   section.skills .gridWrapper {
     -ms-grid-columns: 180px 180px;
         grid-template-columns: 180px 180px;
@@ -1188,6 +1215,9 @@ footer p {
   .link a {
     width: 125px;
   }
+  section.skills {
+    padding-bottom: 45px;
+  }
   section.skills .gridWrapper {
     -ms-grid-columns: 145px 145px;
         grid-template-columns: 145px 145px;
@@ -1197,9 +1227,6 @@ footer p {
   .picture > img:nth-child(1),
   section.about .aboutParent img {
     width: 288px;
-  }
-  section.skills {
-    padding-bottom: 23px;
   }
 }
 /*# sourceMappingURL=main.css.map */
