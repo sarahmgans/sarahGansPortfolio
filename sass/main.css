@@ -550,10 +550,19 @@ header i.fas {
   display: none;
 }
 
-.fa.fa-bars,
-.fas.fa-times {
+.accent {
   position: absolute;
   color: #b3331a;
+  top: 12px;
+  right: 16px;
+  font-size: 35px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.white {
+  position: absolute;
+  color: #EFEFF0;
   top: 12px;
   right: 16px;
   font-size: 35px;

@@ -112,60 +112,60 @@
     margin-top: 15px;
   }
   .hamburger-menu {
-      display: block;
-      ul {
-        display: flex;
-        flex-direction: column;
-        margin: 0px;
-        padding-left: 17px;
-        padding-right: 17px;
-        width: 100%;
-        height: 100%;
-        opacity: 0.9;
-        justify-content: center;
-      }
-    }
-    .navVisible {
-      visibility: visible;
-      right: 0;
-      top: 0;
-      position: fixed;
-    }
-    nav {
-      visibility: hidden;
-      position: fixed;
-      background-color: $lightColor;
-      transition: all 0.3s ease;
-      z-index: 3;
-      border-radius: 1px;
-      top: 0;
-      right: 100%;
+    display: block;
+    ul {
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+      padding-left: 17px;
+      padding-right: 17px;
       width: 100%;
-      border-bottom: 1px solid rgba(73, 71, 71, 0.3);
-      height: 0;
-    }
-    nav ul li a:hover::after, 
-    nav ul li a.active::after,
-    nav ul li a:active::after,
-    nav ul li a:focus::after {
-      width: 0;
-    }
-    nav ul li a:hover,
-    nav ul li a.active,
-    nav ul li a:active,
-    nav ul li a:focus {
-      color: $accentColor;
-    }
-    nav ul li {
-      border-bottom: 1px solid $lightColor;
-    }
-    section.about {
-    .aboutParent {
-      div:nth-child(1) {
-        width: 100%;
-      }
+      height: 100%;
+      opacity: 0.9;
+      justify-content: center;
     }
   }
+  .navVisible {
+    visibility: visible;
+    right: 0;
+    top: 0;
+    position: fixed;
+  }
+  nav {
+    visibility: hidden;
+    position: fixed;
+    background-color: $lightColor;
+    transition: all 0.3s ease;
+    z-index: 3;
+    border-radius: 1px;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    border-bottom: 1px solid rgba(73, 71, 71, 0.3);
+    height: 0;
+  }
+  nav ul li a:hover::after, 
+  nav ul li a.active::after,
+  nav ul li a:active::after,
+  nav ul li a:focus::after {
+    width: 0;
+  }
+  nav ul li a:hover,
+  nav ul li a.active,
+  nav ul li a:active,
+  nav ul li a:focus {
+    color: $accentColor;
+  }
+  nav ul li {
+    border-bottom: 1px solid $lightColor;
+  }
+  section.about {
+  .aboutParent {
+    div:nth-child(1) {
+      width: 100%;
+    }
+  }
+}
   section.contact form {
     width: 90%;
   }

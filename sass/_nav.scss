@@ -3,8 +3,11 @@
     display: none;
 }
 
-.fa.fa-bars,
-.fas.fa-times {
+// .fa.fa-bars {
+    
+// }
+
+.accent {
     position: absolute;
     color: $accentColor;
     top: 12px;
@@ -13,4 +16,15 @@
     position: fixed;
     z-index: 1000;
 }
+
+.white {
+    position: absolute;
+    color: $lightColor;
+    top: 12px;
+    right: 16px;
+    font-size: 35px;
+    position: fixed;
+    z-index: 1000; 
+}
+
 
