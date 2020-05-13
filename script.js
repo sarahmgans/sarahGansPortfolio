@@ -1,7 +1,7 @@
 $(document).ready(function () {
   const scroll = function (scrollTo) {
     $('html, body').animate({
-      scrollTop: $(scrollTo).offset().top - 77
+      scrollTop: $(scrollTo).offset().top - (nav.outerHeight() - 1)
     }, 500);
   }
 
@@ -12,20 +12,27 @@ $(document).ready(function () {
     })
   }
 
+  const clickEventMenu = () => {
+    $('a').on('click', function (e) {
+    e.preventDefault();
+    scroll($(this).attr('href'))
+    })
+  }
+
   clickEventStart();
+  clickEventMenu();
 
   // From https://codepen.io/yuki-san/pen/eJqLNO
 
   // All of the sections besides the contact section, as the nav bar never reaches the top of the contact section so it has a different top value. 
   let section = $('section#home, section#about, section#skills, section#projects, section#contact')
     let nav = $('nav')
-    const nav_height = 78
 
   $(window).on('scroll', function () {
     const cur_pos = $(this).scrollTop();
 
     section.each(function () {
-      const top = $(this).offset().top - nav_height;
+      const top = $(this).offset().top - nav.outerHeight()
       const bottom = top + $(this).outerHeight();
 
       if (cur_pos >= top && cur_pos <= bottom) {
@@ -36,17 +43,6 @@ $(document).ready(function () {
         nav.find('a[href="#' + $(this).attr('id') + '"]').addClass('active');
       }
     });
-  });
-
-  nav.find('a').on('click', function () {
-    var $el = $(this)
-        id = $el.attr('href');
-
-    $('html, body').animate({
-      scrollTop: $(id).offset().top - 77
-    }, 500);
-
-    return false;
   });
 
   $('i.move').on('click', function () {
