@@ -624,7 +624,7 @@ section.skills {
 }
 
 section.skills .bodyLine {
-  margin-bottom: 75px;
+  margin-bottom: 84px;
 }
 
 section.skills .gridWrapper {
@@ -685,7 +685,7 @@ section.projects .projectParent {
   display: -ms-flexbox;
   display: flex;
   margin-top: 110px;
-  padding-bottom: 110px;
+  padding-bottom: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
