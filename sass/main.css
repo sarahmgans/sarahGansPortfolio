@@ -763,19 +763,19 @@ section.contact textarea {
 }
 
 section.contact textarea::-webkit-input-placeholder {
-  color: black;
+  color: #444349;
 }
 
 section.contact textarea:-ms-input-placeholder {
-  color: black;
+  color: #444349;
 }
 
 section.contact textarea::-ms-input-placeholder {
-  color: black;
+  color: #444349;
 }
 
 section.contact textarea::placeholder {
-  color: black;
+  color: #444349;
 }
 
 section.contact textarea:focus {
@@ -844,25 +844,25 @@ section.contact .formParent .half {
 section.contact input::-webkit-input-placeholder {
   font-size: 18px;
   line-height: 24px;
-  color: black;
+  color: #444349;
 }
 
 section.contact input:-ms-input-placeholder {
   font-size: 18px;
   line-height: 24px;
-  color: black;
+  color: #444349;
 }
 
 section.contact input::-ms-input-placeholder {
   font-size: 18px;
   line-height: 24px;
-  color: black;
+  color: #444349;
 }
 
 section.contact input::placeholder {
   font-size: 18px;
   line-height: 24px;
-  color: black;
+  color: #444349;
 }
 
 section.contact .buttonParent {
