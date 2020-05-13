@@ -699,7 +699,7 @@ section.projects .projectParent h3 {
   font-weight: 400;
   line-height: 1.5;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
 }
 
 section.projects .projectParent h4 {
@@ -711,7 +711,7 @@ section.projects .projectParent h4 {
   text-align: center;
   line-height: 1.5;
   margin-top: 0;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
 
 section.projects .projectParent p {
