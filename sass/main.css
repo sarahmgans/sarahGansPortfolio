@@ -556,7 +556,7 @@ header i.fas {
   color: #b3331a;
   top: 12px;
   right: 16px;
-  font-size: 30px;
+  font-size: 35px;
   position: fixed;
   z-index: 1000;
 }
@@ -776,18 +776,26 @@ section.contact textarea {
 
 section.contact textarea::-webkit-input-placeholder {
   color: #444349;
+  padding: 0;
+  margin: 0;
 }
 
 section.contact textarea:-ms-input-placeholder {
   color: #444349;
+  padding: 0;
+  margin: 0;
 }
 
 section.contact textarea::-ms-input-placeholder {
   color: #444349;
+  padding: 0;
+  margin: 0;
 }
 
 section.contact textarea::placeholder {
   color: #444349;
+  padding: 0;
+  margin: 0;
 }
 
 section.contact textarea:focus {
@@ -857,24 +865,32 @@ section.contact input::-webkit-input-placeholder {
   font-size: 18px;
   line-height: 24px;
   color: #444349;
+  padding: 0;
+  margin: 0;
 }
 
 section.contact input:-ms-input-placeholder {
   font-size: 18px;
   line-height: 24px;
   color: #444349;
+  padding: 0;
+  margin: 0;
 }
 
 section.contact input::-ms-input-placeholder {
   font-size: 18px;
   line-height: 24px;
   color: #444349;
+  padding: 0;
+  margin: 0;
 }
 
 section.contact input::placeholder {
   font-size: 18px;
   line-height: 24px;
   color: #444349;
+  padding: 0;
+  margin: 0;
 }
 
 section.contact .buttonParent {
@@ -1116,6 +1132,10 @@ footer p {
 }
 
 @media (max-width: 430px) {
+  .fa.fa-bars,
+  .fas.fa-times {
+    font-size: 30px;
+  }
   section.skills .gridWrapper {
     -ms-grid-columns: 180px 180px;
         grid-template-columns: 180px 180px;
