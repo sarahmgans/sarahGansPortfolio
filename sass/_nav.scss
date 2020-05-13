@@ -1,6 +1,6 @@
 .hamburger-menu {
     position: relative;
-    visibility: hidden;
+    display: none;
 }
 
 .fa.fa-bars,
@@ -8,7 +8,7 @@
     position: absolute;
     color: $accentColor;
     top: 12px;
-    right: 14px;
+    right: 16px;
     font-size: 30px;
     position: fixed;
     z-index: 1000;

@@ -15,7 +15,7 @@ h1 {
     font-size: 64px;
     letter-spacing: 7px;
     font-family: 'Hamburg Hand Regular';
-    margin-top: 45px;
+    margin-top: 0;
     margin-bottom: 15px;
 }
 
@@ -49,6 +49,7 @@ a {
 nav {
     display: flex;
     justify-content: center;
+    height: 78px;
 }
 
 nav ul li {

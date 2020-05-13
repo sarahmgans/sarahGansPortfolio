@@ -96,7 +96,7 @@
 
 @media(max-width: 685px) {
   .hamburger-menu {
-      visibility: visible;
+      display: block;
     }
 
     .navVisible {
@@ -116,6 +116,7 @@
         right: -225px;
         width: 225px;
         border-bottom: 1px solid rgba(73, 71, 71, 0.3);
+        height: 0;
     }
      .hamburger-menu ul {
         display: flex;
@@ -125,6 +126,7 @@
         padding-right: 17px;
         padding-top: 80px;
         width: 224px;
+        opacity: 0.9;
     }
 
     nav ul li a:hover::after, 
@@ -142,6 +144,9 @@
     }
     header i.fas {
       margin-bottom: 50px;
+    }
+    nav ul li {
+      border-bottom: 1px solid $lightColor;
     }
 }
 
@@ -193,6 +198,7 @@
     letter-spacing: 4px;
     margin-bottom: 11px;
     line-height: 1.1;
+    margin-top: 50px;
   }
   h2.header {
     font-size: 20px;

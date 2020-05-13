@@ -398,7 +398,7 @@ h1 {
   font-size: 64px;
   letter-spacing: 7px;
   font-family: 'Hamburg Hand Regular';
-  margin-top: 45px;
+  margin-top: 0;
   margin-bottom: 15px;
 }
 
@@ -437,6 +437,7 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 78px;
 }
 
 nav ul li {
@@ -545,7 +546,7 @@ header i.fas {
 
 .hamburger-menu {
   position: relative;
-  visibility: hidden;
+  display: none;
 }
 
 .fa.fa-bars,
@@ -553,7 +554,7 @@ header i.fas {
   position: absolute;
   color: #b3331a;
   top: 12px;
-  right: 14px;
+  right: 16px;
   font-size: 30px;
   position: fixed;
   z-index: 1000;
@@ -1045,7 +1046,7 @@ footer p {
 
 @media (max-width: 685px) {
   .hamburger-menu {
-    visibility: visible;
+    display: block;
   }
   .navVisible {
     visibility: visible;
@@ -1065,6 +1066,7 @@ footer p {
     right: -225px;
     width: 225px;
     border-bottom: 1px solid rgba(73, 71, 71, 0.3);
+    height: 0;
   }
   .hamburger-menu ul {
     display: -webkit-box;
@@ -1079,6 +1081,7 @@ footer p {
     padding-right: 17px;
     padding-top: 80px;
     width: 224px;
+    opacity: 0.9;
   }
   nav ul li a:hover::after,
   nav ul li a.active::after,
@@ -1094,6 +1097,9 @@ footer p {
   }
   header i.fas {
     margin-bottom: 50px;
+  }
+  nav ul li {
+    border-bottom: 1px solid #EFEFF0;
   }
 }
 
@@ -1149,6 +1155,7 @@ footer p {
     letter-spacing: 4px;
     margin-bottom: 11px;
     line-height: 1.1;
+    margin-top: 50px;
   }
   h2.header {
     font-size: 20px;
