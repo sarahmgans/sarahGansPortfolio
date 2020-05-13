@@ -47,7 +47,6 @@ $(document).ready(function () {
 
   $('i.move').on('click', function () {
     $('.hamburger-menu nav').toggleClass('navVisible')
-    $('.fa.fa-bars').toggleClass('white accent')
   })
 
   $('i').on('keydown', function (e) {

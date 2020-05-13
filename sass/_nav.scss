@@ -3,11 +3,7 @@
     display: none;
 }
 
-// .fa.fa-bars {
-    
-// }
-
-.accent {
+.fa.fa-bars {
     position: absolute;
     color: $accentColor;
     top: 12px;
@@ -17,14 +13,5 @@
     z-index: 1000;
 }
 
-.white {
-    position: absolute;
-    color: $lightColor;
-    top: 12px;
-    right: 16px;
-    font-size: 35px;
-    position: fixed;
-    z-index: 1000; 
-}
 
 
