@@ -66,4 +66,16 @@ $(document).ready(function () {
 
     return false;
   });
+
+  $('i.move').on('click', function () {
+    $('.hamburger-menu nav').toggleClass('navVisible')
+    $('i.move').toggleClass('fa fa-bars fas fa-times')
+  })
+
+  $('i').on('keydown', function (e) {
+    if (e.key == 'Enter') {
+      $('.hamburger-menu nav').toggleClass('navVisible')
+      $('i.move').toggleClass('fa fa-bars fas fa-times')
+    }
+  })
 });

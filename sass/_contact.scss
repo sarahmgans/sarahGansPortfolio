@@ -117,5 +117,8 @@ section.contact {
       color: inherit;
       text-decoration: underline;
     }
+    p:nth-child(1) {
+      text-align: center;
+    }
   }
 }

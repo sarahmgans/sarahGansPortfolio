@@ -28,9 +28,10 @@ section.about{
   }
   .aboutParent {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     div:nth-child(1) {
-      margin-right: 10%;
+      width: 65%;
+      padding-right: 20px;
     }
   }
   .picture {

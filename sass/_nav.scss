@@ -1,0 +1,15 @@
+.hamburger-menu {
+    position: relative;
+    visibility: hidden;
+}
+
+.fa.fa-bars,
+.fas.fa-times {
+    position: absolute;
+    color: $accentColor;
+    top: 39px;
+    right: 44px;
+    font-size: 35px;
+    position: fixed;
+    z-index: 1000;
+}
