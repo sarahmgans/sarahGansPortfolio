@@ -322,8 +322,8 @@ h2 {
   font-size: 27px;
   letter-spacing: 6px;
   margin: 0;
-  padding-top: 65px;
-  padding-bottom: 65px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   font-weight: 400;
 }
 
@@ -568,7 +568,7 @@ section.about {
 }
 
 section.about .bodyLine {
-  margin-bottom: 110px;
+  margin-bottom: 80px;
 }
 
 section.about p {
@@ -625,7 +625,7 @@ section.skills {
 }
 
 section.skills .bodyLine {
-  margin-bottom: 95px;
+  margin-bottom: 75px;
 }
 
 section.skills .gridWrapper {
@@ -669,12 +669,12 @@ section.projects {
 }
 
 section.projects .bodyLine.seperator {
-  margin-bottom: 65px;
+  margin-bottom: 50px;
   width: 50px;
 }
 
 section.projects div.projectParent:nth-child(3) {
-  margin-top: 110px;
+  margin-top: 80px;
 }
 
 section.projects img {
@@ -685,8 +685,8 @@ section.projects .projectParent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 65px;
-  padding-bottom: 65px;
+  margin-top: 50px;
+  padding-bottom: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -930,7 +930,7 @@ section.contact .phone a[href^="tel"] {
 }
 
 section.contact .phone a[href^="email"] {
-  margin-bottom: 65px;
+  margin-bottom: 50px;
   color: inherit;
   text-decoration: underline;
 }
@@ -1128,10 +1128,6 @@ footer p {
   section.projects .projectParent img,
   div.projectParent:nth-child(3) > div:nth-child(2) {
     width: 400px;
-  }
-  section.projects .projectParent {
-    margin-top: 65px;
-    padding-bottom: 65px;
   }
   section.contact form {
     width: 90%;

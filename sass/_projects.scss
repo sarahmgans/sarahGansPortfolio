@@ -2,19 +2,19 @@ section.projects {
   background: $lightColor;
   height: auto;
   .bodyLine.seperator {
-    margin-bottom: 65px;
+    margin-bottom: 50px;
     width: 50px;
   }
   div.projectParent:nth-child(3) {
-    margin-top: 110px;
+    margin-top: 80px;
   }
   img {
     width: 550px;
   }
   .projectParent {
     display: flex;
-    margin-top: 65px;
-    padding-bottom: 65px;
+    margin-top: 50px;
+    padding-bottom: 50px;
     align-items: center;
     justify-content: space-between;
     h3 {
