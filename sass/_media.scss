@@ -5,16 +5,12 @@
     }
     .projectParent p {
       width: 500px;
-    }
+    } 
   }
 }
 
 @media(max-width: 1160px) {
   section.skills .gridWrapper {
-    display: grid;
-    grid-gap: 10px;
-    justify-content: center;
-    padding-bottom: 20px;
     grid-template-columns: 200px 200px 200px 200px;
     grid-template-rows: 200px 200px 200px;
   }
@@ -22,44 +18,51 @@
   section.projects .projectParent p {
     width: 400px;
   }
+  section.contact form {
+    width: 90%;
+  }
 }
 
 @media(max-width: 975px) {
-  section.projects .projectParent {
+  section.projects {
+    .projectParent {
     flex-direction: column;
-    img {
-      width: 500px;
-      padding-bottom: 30px;
+      img {
+        width: 500px;
+        padding-bottom: 30px;
+      }
+    }
+    .projectParent.middle {
+      flex-direction: column-reverse;
     }
   }
-  section.projects .projectParent.middle {
-    flex-direction: column-reverse;
-  }
+  
+  section.projects 
   .formParent {
     flex-direction: column;
     .half {
       margin-top: 40px;
     }
   }
-  section.contact p.working {
-    padding-bottom: 0;
-  }
   section.contact form {
-    padding-top: 0;
+    width: 70%;
   }
+  section.contact {
+    p.working {
+      padding-bottom: 0;
+    }
+    form {
+      padding-top: 0;
+    }
+  }
+
   section.skills .gridWrapper {
-    display: grid;
     grid-gap: 0px;
-    justify-content: center;
     padding-bottom: 20px;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 200px 200px 200px 200px;
     .icon {
     font-size: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     }
   }
   section.about {
@@ -81,44 +84,12 @@
 }
 
 @media(max-width: 860px) {
-  nav ul li {
-    margin: 25px 15px 25px 15px;
-    font-size: 16px;
+  h1 {
+    margin-top: 50px;
   }
-  section.about{
-    .aboutParent {
-      div:nth-child(1) {
-        width: 100%;
-      }
-    }
-  }
-}
-
-@media(max-width: 685px) {
   .hamburger-menu {
       display: block;
-    }
-
-    .navVisible {
-      visibility: visible;
-      right: 0;
-      top: 0;
-      position: fixed;
-    }
-    nav {
-        visibility: hidden;
-        position: fixed;
-        background-color: $lightColor;
-        transition: all 0.3s ease;
-        z-index: 3;
-        border-radius: 1px;
-        top: 0;
-        right: 100%;
-        width: 100%;
-        border-bottom: 1px solid rgba(73, 71, 71, 0.3);
-        height: 0;
-    }
-     .hamburger-menu ul {
+      ul {
         display: flex;
         flex-direction: column;
         margin-bottom: 0px;
@@ -128,15 +99,33 @@
         width: 100%;
         height: 100%;
         opacity: 0.9;
+      }
     }
-
+    .navVisible {
+      visibility: visible;
+      right: 0;
+      top: 0;
+      position: fixed;
+    }
+    nav {
+      visibility: hidden;
+      position: fixed;
+      background-color: $lightColor;
+      transition: all 0.3s ease;
+      z-index: 3;
+      border-radius: 1px;
+      top: 0;
+      right: 100%;
+      width: 100%;
+      border-bottom: 1px solid rgba(73, 71, 71, 0.3);
+      height: 0;
+    }
     nav ul li a:hover::after, 
     nav ul li a.active::after,
     nav ul li a:active::after,
     nav ul li a:focus::after {
       width: 0;
     }
-
     nav ul li a:hover,
     nav ul li a.active,
     nav ul li a:active,
@@ -149,6 +138,16 @@
     nav ul li {
       border-bottom: 1px solid $lightColor;
     }
+    section.about {
+    .aboutParent {
+      div:nth-child(1) {
+        width: 100%;
+      }
+    }
+  }
+  section.contact form {
+    width: 90%;
+  }
 }
 
 @media(max-width: 610px) {
@@ -163,6 +162,9 @@
   section.projects .projectParent {
     margin-top: 60px;
     padding-bottom: 60px;
+  }
+  section.contact form {
+    width: 90%;
   }
 }
 
@@ -199,7 +201,6 @@
     letter-spacing: 4px;
     margin-bottom: 11px;
     line-height: 1.1;
-    margin-top: 50px;
   }
   h2.header {
     font-size: 20px;
@@ -212,19 +213,17 @@
       width: 270px;
     }
   }
+  div.projectParent:nth-child(3) > div:nth-child(2) {
+    width: 294px;
+  }
   .link a {
     width: 125px;
   }
    section.skills .gridWrapper {
-    grid-template-columns: 150px 150px;
+    grid-template-columns: 145px 145px;
     grid-template-rows: 150px 150px 150px 150px 150px 150px;
   }
-  div.projectParent:nth-child(3) > div:nth-child(2) {
-    width: 294px;
-  }
-  .picture > img:nth-child(1) {
-    width: 288px;
-  }
+  .picture > img:nth-child(1),
   section.about .aboutParent img {
     width: 288px;
   }

@@ -13,7 +13,7 @@ $(document).ready(function () {
   }
 
   const clickEventMenu = () => {
-    $('a').on('click', function (e) {
+    $('.nav a').on('click', function (e) {
     e.preventDefault();
     scroll($(this).attr('href'))
     })
