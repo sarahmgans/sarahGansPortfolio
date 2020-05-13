@@ -552,9 +552,9 @@ header i.fas {
 .fas.fa-times {
   position: absolute;
   color: #b3331a;
-  top: 39px;
-  right: 44px;
-  font-size: 35px;
+  top: 12px;
+  right: 14px;
+  font-size: 30px;
   position: fixed;
   z-index: 1000;
 }
@@ -1091,6 +1091,9 @@ footer p {
   nav ul li a:active,
   nav ul li a:focus {
     color: #b3331a;
+  }
+  header i.fas {
+    margin-bottom: 50px;
   }
 }
 

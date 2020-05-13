@@ -140,6 +140,9 @@
     nav ul li a:focus {
       color: $accentColor;
     }
+    header i.fas {
+      margin-bottom: 50px;
+    }
 }
 
 @media(max-width: 610px) {
