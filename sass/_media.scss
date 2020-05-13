@@ -36,13 +36,11 @@
       flex-direction: column-reverse;
     }
   }
-  
-  section.projects 
   .formParent {
     flex-direction: column;
-    .half {
+  }
+  .half {
       margin-top: 40px;
-    }
   }
   section.contact form {
     width: 70%;
@@ -92,13 +90,13 @@
       ul {
         display: flex;
         flex-direction: column;
-        margin-bottom: 0px;
+        margin: 0px;
         padding-left: 17px;
         padding-right: 17px;
-        padding-top: 80px;
         width: 100%;
         height: 100%;
         opacity: 0.9;
+        justify-content: center;
       }
     }
     .navVisible {
@@ -131,9 +129,6 @@
     nav ul li a:active,
     nav ul li a:focus {
       color: $accentColor;
-    }
-    header i.fas {
-      margin-bottom: 50px;
     }
     nav ul li {
       border-bottom: 1px solid $lightColor;
@@ -219,7 +214,7 @@
   .link a {
     width: 125px;
   }
-   section.skills .gridWrapper {
+  section.skills .gridWrapper {
     grid-template-columns: 145px 145px;
     grid-template-rows: 150px 150px 150px 150px 150px 150px;
   }

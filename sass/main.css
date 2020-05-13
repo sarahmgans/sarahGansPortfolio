@@ -977,15 +977,13 @@ footer p {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  section.projects
-.formParent {
+  .formParent {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  section.projects
-.formParent .half {
+  .half {
     margin-top: 40px;
   }
   section.contact form {
@@ -1044,13 +1042,15 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 0px;
+    margin: 0px;
     padding-left: 17px;
     padding-right: 17px;
-    padding-top: 80px;
     width: 100%;
     height: 100%;
     opacity: 0.9;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .navVisible {
     visibility: visible;
@@ -1083,9 +1083,6 @@ footer p {
   nav ul li a:active,
   nav ul li a:focus {
     color: #b3331a;
-  }
-  header i.fas {
-    margin-bottom: 50px;
   }
   nav ul li {
     border-bottom: 1px solid #EFEFF0;
