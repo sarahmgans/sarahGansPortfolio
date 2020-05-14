@@ -105,8 +105,10 @@
     margin-top: 75px;
     padding-bottom: 75px;
   }
-  section.contact .phone a[href^="email"] {
-    margin-bottom: 75px;
+  section.contact {
+    .social {
+      margin-bottom: 75px;
+    }
   }
   section.contact p.working {
     padding-top: 75px;
