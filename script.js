@@ -1,7 +1,7 @@
 $(document).ready(function () {
   const scroll = function (scrollTo) {
     $('html, body').animate({
-      scrollTop: $(scrollTo).offset().top - (nav.outerHeight() - 1)
+      scrollTop: $(scrollTo).offset().top - (nav.outerHeight() - 2)
     }, 500);
   }
 
