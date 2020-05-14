@@ -1139,6 +1139,12 @@ footer p {
 @media (max-width: 430px) {
   .fa.fa-bars {
     width: 40px;
+    top: 14px;
+    right: 14px;
+  }
+  section.about .picture img {
+    width: 100%;
+    height: auto;
   }
   section.skills {
     padding-bottom: 35px;
@@ -1171,6 +1177,13 @@ footer p {
   }
 }
 
+@media (max-width: 414px) {
+  .fa.fa-bars {
+    top: 16px;
+    right: 16px;
+  }
+}
+
 @media (max-width: 375px) {
   h1 {
     font-size: 50px;
@@ -1182,6 +1195,10 @@ footer p {
     font-size: 20px;
     letter-spacing: 5px;
     line-height: 1.3;
+  }
+  .fa.fa-bars {
+    top: 14px;
+    right: 14px;
   }
   section.projects .projectParent img,
   section.projects .projectParent p {
@@ -1202,9 +1219,12 @@ footer p {
     -ms-grid-rows: 150px 150px 150px 150px 150px 150px;
         grid-template-rows: 150px 150px 150px 150px 150px 150px;
   }
-  .picture > img:nth-child(1),
-  section.about .aboutParent img {
-    width: 288px;
+}
+
+@media (max-width: 320px) {
+  .fa.fa-bars {
+    top: 11px;
+    right: 11px;
   }
 }
 /*# sourceMappingURL=main.css.map */
