@@ -181,7 +181,7 @@
       }
     }
     .submit {
-      &:hover
+      &:hover,
       &:focus {
         background-color: $accentColor;
       } 
