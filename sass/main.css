@@ -1014,7 +1014,6 @@ footer p {
     padding-top: 0;
   }
   section.skills .gridWrapper {
-    grid-gap: 0px;
     -ms-grid-columns: 200px 200px 200px;
         grid-template-columns: 200px 200px 200px;
     -ms-grid-rows: 200px 200px 200px 200px;
