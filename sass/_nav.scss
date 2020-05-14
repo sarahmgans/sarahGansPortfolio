@@ -4,13 +4,13 @@
 }
 
 .fa.fa-bars {
-    position: absolute;
     color: $accentColor;
-    top: 12px;
+    top: 16px;
     right: 16px;
-    font-size: 35px;
+    width: 45px;
     position: fixed;
     z-index: 1000;
+    cursor: pointer;
 }
 
 

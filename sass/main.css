@@ -521,13 +521,13 @@ header i.fas {
 }
 
 .fa.fa-bars {
-  position: absolute;
   color: #b3331a;
-  top: 12px;
+  top: 16px;
   right: 16px;
-  font-size: 35px;
+  width: 45px;
   position: fixed;
   z-index: 1000;
+  cursor: pointer;
 }
 
 section.about {
@@ -1137,9 +1137,8 @@ footer p {
 }
 
 @media (max-width: 430px) {
-  .fa.fa-bars,
-  .fas.fa-times {
-    font-size: 30px;
+  .fa.fa-bars {
+    width: 40px;
   }
   section.skills {
     padding-bottom: 35px;

@@ -189,9 +189,8 @@
 }
 
 @media(max-width: 430px) {
-  .fa.fa-bars,
-  .fas.fa-times {
-    font-size: 30px;
+  .fa.fa-bars {
+    width: 40px;
   }
   section.skills {
     padding-bottom: 35px;
