@@ -1102,8 +1102,8 @@ footer p {
   nav ul li a:active::after,
   nav ul li a:focus::after {
     width: 0;
+    display: none;
   }
-  nav ul li a:hover,
   nav ul li a.active {
     color: #b3331a;
   }
