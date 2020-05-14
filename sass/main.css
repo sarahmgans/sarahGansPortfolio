@@ -1086,15 +1086,12 @@ footer p {
   nav {
     visibility: hidden;
     position: fixed;
-    background-color: #EFEFF0;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     z-index: 3;
-    border-radius: 1px;
     top: 0;
     right: 100%;
     width: 100%;
-    border-bottom: 1px solid rgba(73, 71, 71, 0.3);
     height: 0;
   }
   nav ul li a:hover::after,
