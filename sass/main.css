@@ -298,8 +298,7 @@ h2 {
 }
 
 p,
-a[href^="tel"],
-a[href^="email"] {
+.phone {
   font-family: 'Source Sans Pro';
   color: #444349;
   font-size: 19px;
@@ -898,7 +897,7 @@ section.contact .phone a[href^="tel"] {
   line-height: 1;
 }
 
-section.contact .phone a[href^="email"] {
+section.contact .phone a[href^="mailto"] {
   color: inherit;
   text-decoration: underline;
   line-height: 1;
