@@ -174,7 +174,7 @@
   section.contact {
     .social {
       a i {
-        &:hover
+        &:hover,
         &:focus {
           color: $darkColor;
         }

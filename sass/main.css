@@ -1138,7 +1138,7 @@ footer p {
 }
 
 @media (max-width: 768px) {
-  section.contact .social a i:hover section.contact .social a i:focus {
+  section.contact .social a i:hover, section.contact .social a i:focus {
     color: #444349;
   }
   section.contact .submit:hover section.contact .submit:focus {
