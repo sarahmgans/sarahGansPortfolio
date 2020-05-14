@@ -170,6 +170,31 @@
   }
 }
 
+@media(max-width: 768px) {
+  section.contact {
+    .social {
+      a i {
+        &:hover
+        &:focus {
+          color: $darkColor;
+        }
+      }
+    }
+    .link a {
+      &:hover,
+      &:focus {
+        background-color: $accentColor;
+      }
+    }
+    .submit {
+      &:hover
+      &:focus {
+        background-color: $accentColor;
+      } 
+    }
+  }
+}
+
 @media(max-width: 610px) {
   section.skills .gridWrapper {
     grid-template-columns: 200px 200px;
