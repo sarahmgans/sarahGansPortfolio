@@ -177,6 +177,7 @@
         &:hover,
         &:focus {
           color: $darkColor;
+          transform: none;
         }
       }
     }

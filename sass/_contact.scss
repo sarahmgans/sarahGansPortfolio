@@ -146,6 +146,7 @@ section.contact {
       &:hover,
       &:focus {
         color: $accentColor;
+        transform: scale(1.1);
       }
     }
   }
