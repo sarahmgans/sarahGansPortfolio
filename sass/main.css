@@ -1141,10 +1141,10 @@ footer p {
   section.contact .social a i:hover section.contact .social a i:focus {
     color: #444349;
   }
-  section.contact .link a:hover, section.contact .link a:focus {
+  section.contact .submit:hover section.contact .submit:focus {
     background-color: #b3331a;
   }
-  section.contact .submit:hover section.contact .submit:focus {
+  .link a:hover, .link a:focus {
     background-color: #b3331a;
   }
 }

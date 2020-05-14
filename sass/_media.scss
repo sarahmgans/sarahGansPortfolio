@@ -180,17 +180,17 @@
         }
       }
     }
-    .link a {
-      &:hover,
-      &:focus {
-        background-color: $accentColor;
-      }
-    }
     .submit {
       &:hover
       &:focus {
         background-color: $accentColor;
       } 
+    }
+  }
+  .link a {
+    &:hover,
+    &:focus {
+      background-color: $accentColor;
     }
   }
 }
