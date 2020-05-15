@@ -289,7 +289,7 @@ h2 {
   color: #444349;
   text-align: center;
   font-family: 'Hamburg Hand Regular';
-  font-size: 35px;
+  font-size: 32px;
   letter-spacing: 4px;
   margin: 0;
   padding-top: 100px;
@@ -1058,7 +1058,7 @@ footer p {
   }
   h2 {
     padding-top: 75px;
-    font-size: 31px;
+    font-size: 30px;
     letter-spacing: 3px;
   }
   section.about {
@@ -1243,7 +1243,7 @@ footer p {
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 413px) {
   h1 {
     font-size: 41px;
   }
