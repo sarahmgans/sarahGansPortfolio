@@ -288,9 +288,9 @@ ul {
 h2 {
   color: #444349;
   text-align: center;
-  font-family: 'Hamburg Hand Light';
-  font-size: 27px;
-  letter-spacing: 6px;
+  font-family: 'Hamburg Hand Regular';
+  font-size: 35px;
+  letter-spacing: 4px;
   margin: 0;
   padding-top: 100px;
   padding-bottom: 30px;
@@ -1058,6 +1058,8 @@ footer p {
   }
   h2 {
     padding-top: 75px;
+    font-size: 30px;
+    letter-spacing: 3px;
   }
   section.about {
     padding-bottom: 75px;
@@ -1166,6 +1168,10 @@ footer p {
     letter-spacing: 1px;
     font-size: 23px;
   }
+  h2 {
+    font-size: 27px;
+    letter-spacing: 2px;
+  }
   section.skills .gridWrapper {
     -ms-grid-columns: 200px 200px;
         grid-template-columns: 200px 200px;
@@ -1178,6 +1184,9 @@ footer p {
   }
   section.contact form {
     width: 90%;
+  }
+  section.projects .projectParent h3 {
+    font-size: 20px;
   }
 }
 
@@ -1235,10 +1244,6 @@ footer p {
   h1 {
     font-size: 41px;
   }
-  h2 {
-    font-size: 24px;
-    letter-spacing: 2px;
-  }
   h2.header {
     font-size: 19px;
   }
@@ -1247,7 +1252,8 @@ footer p {
     right: 16px;
   }
   section.projects .projectParent h3 {
-    font-size: 21px;
+    letter-spacing: 1px;
+    font-size: 20px;
   }
 }
 
@@ -1265,10 +1271,6 @@ footer p {
   section.projects .projectParent img,
   section.projects .projectParent p {
     width: 270px;
-  }
-  section.projects .projectParent h3 {
-    letter-spacing: 1px;
-    font-size: 20px;
   }
   div.projectParent:nth-child(3) > div:nth-child(2) {
     width: 294px;

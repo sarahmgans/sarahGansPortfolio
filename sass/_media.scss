@@ -92,6 +92,8 @@
   }
   h2 {
     padding-top: 75px;
+    font-size: 30px;
+    letter-spacing: 3px;
   }
   section.about {
     padding-bottom: 75px;
@@ -210,6 +212,10 @@
     letter-spacing: 1px;
     font-size: 23px;
   }
+  h2 {
+    font-size: 27px;
+    letter-spacing: 2px;
+  }
   section.skills .gridWrapper {
     grid-template-columns: 200px 200px;
     grid-template-rows: 200px 200px 200px 200px 200px 200px;
@@ -220,6 +226,9 @@
   }
   section.contact form {
     width: 90%;
+  }
+  section.projects .projectParent h3 {
+    font-size: 20px;
   }
 }
 
@@ -279,10 +288,6 @@
   h1 {
     font-size: 41px;
   }
-  h2 {
-    font-size: 24px;
-    letter-spacing: 2px;
-  }
   h2.header {
     font-size: 19px;
   }
@@ -290,8 +295,11 @@
     top: 16px;
     right: 16px;
   }
-  section.projects .projectParent h3 {
-    font-size: 21px;
+  section.projects .projectParent {
+    h3 {
+      letter-spacing: 1px;
+      font-size: 20px;
+    }
   }
 }
 
@@ -311,10 +319,7 @@
     p {
       width: 270px;
     }
-    h3 {
-      letter-spacing: 1px;
-      font-size: 20px;
-    }
+    
   }
   div.projectParent:nth-child(3) > div:nth-child(2) {
     width: 294px;
