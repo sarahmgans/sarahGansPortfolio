@@ -54,8 +54,8 @@
     }
   }
   section.skills .gridWrapper {
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 190px 190px 190px;
+    grid-template-rows: 190px 190px 190px 190px;
     .icon {
     font-size: 70px;
     }
@@ -202,6 +202,15 @@
 }
 
 @media(max-width: 610px) {
+  h1{
+    font-size: 55px;
+    letter-spacing: 1px;
+    margin-bottom:  15px;
+  }
+  h2.header {
+    letter-spacing: 1px;
+    font-size: 23px;
+  }
   section.skills .gridWrapper {
     grid-template-columns: 200px 200px;
     grid-template-rows: 200px 200px 200px 200px 200px 200px;
@@ -212,6 +221,15 @@
   }
   section.contact form {
     width: 90%;
+  }
+}
+
+@media(max-width: 470px) {
+  h1 {
+    font-size: 49px;
+  }
+  h2.header {
+    font-size: 22px;
   }
 }
 
@@ -259,6 +277,12 @@
 }
 
 @media(max-width: 414px) {
+  h1 {
+    font-size: 41px;
+  }
+  h2.header {
+    font-size: 19px;
+  }
   .fa.fa-bars {
     top: 16px;
     right: 16px;
@@ -267,15 +291,7 @@
 
 @media (max-width: 375px) {
   h1 {
-    font-size: 57px;
-    letter-spacing: 3px;
-    margin-bottom: 11px;
-    line-height: 1;
-  }
-  h2.header {
-    font-size: 21px;
-    letter-spacing: 3px;
-    line-height: 1.2;
+    margin-bottom: 12px;
   }
   .fa.fa-bars {
     top: 14px;
@@ -302,16 +318,19 @@
   }
 }
 
-@media(max-width: 320px) {
+@media(max-width: 350px) {
   .fa.fa-bars {
     top: 11px;
     right: 11px;
   }
   h1 {
-    font-size: 52px;
+    font-size: 37px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
   }
   h2.header {
     font-size: 18px;
+    letter-spacing: 1px;
   }
 }
 
