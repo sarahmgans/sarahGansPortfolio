@@ -1,3 +1,4 @@
+// Scroll function 
 $(document).ready(function () {
   const scroll = function (scrollTo) {
     $('html, body').animate({
@@ -5,13 +6,15 @@ $(document).ready(function () {
     }, 500);
   }
 
+  // Scroll for chevron
   const clickEventStart = () => {
     $('a.down').on('click', function (e) {
       e.preventDefault();
       scroll('main');
     })
   }
-
+  
+  // Scroll for menu items
   const clickEventMenu = () => {
     $('.nav a').on('click', function (e) {
     e.preventDefault();
@@ -22,9 +25,9 @@ $(document).ready(function () {
   clickEventStart();
   clickEventMenu();
 
+  // Scrolling for the fixed nav
   // From https://codepen.io/yuki-san/pen/eJqLNO
 
-  // All of the sections besides the contact section, as the nav bar never reaches the top of the contact section so it has a different top value. 
   let section = $('section#home, section#about, section#skills, section#projects, section#contact')
     let nav = $('nav')
 
@@ -45,6 +48,7 @@ $(document).ready(function () {
     });
   });
 
+  // For hamburger menu
   $('img.move').on('click', function () {
     $('.hamburger-menu nav').toggleClass('navVisible')
   })
@@ -52,7 +56,6 @@ $(document).ready(function () {
   $('img').on('keydown', function (e) {
     if (e.key == 'Enter') {
       $('.hamburger-menu nav').toggleClass('navVisible')
-      // $('i.move').toggleClass('fa fa-bars fas fa-times')
     }
   })
 });
