@@ -173,31 +173,31 @@
   }
 }
 
-@media(max-width: 768px) {
-  section.contact {
-    .social {
-      a i {
-        &:hover,
-        &:focus {
-          color: $darkColor;
-          transform: none;
-        }
-      }
-    }
-    .submit {
-      &:hover,
-      &:focus {
-        background-color: $accentColor;
-      } 
-    }
-  }
-  section.projects .link a {
-    &:hover,
-    &:focus {
-      background-color: $accentColor;
-    }
-  }
-}
+// @media(max-width: 768px) {
+//   section.contact {
+//     .social {
+//       a i {
+//         &:hover,
+//         &:focus {
+//           color: $darkColor;
+//           transform: none;
+//         }
+//       }
+//     }
+//     .submit {
+//       &:hover,
+//       &:focus {
+//         background-color: $accentColor;
+//       } 
+//     }
+//   }
+//   section.projects .link a {
+//     &:hover,
+//     &:focus {
+//       background-color: $accentColor;
+//     }
+//   }
+// }
 
 @media(max-width: 610px) {
   h1{

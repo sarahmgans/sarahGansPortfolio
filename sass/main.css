@@ -1136,20 +1136,6 @@ footer p {
   }
 }
 
-@media (max-width: 768px) {
-  section.contact .social a i:hover, section.contact .social a i:focus {
-    color: #444349;
-    -webkit-transform: none;
-            transform: none;
-  }
-  section.contact .submit:hover, section.contact .submit:focus {
-    background-color: #b3331a;
-  }
-  section.projects .link a:hover, section.projects .link a:focus {
-    background-color: #b3331a;
-  }
-}
-
 @media (max-width: 610px) {
   h1 {
     font-size: 55px;
