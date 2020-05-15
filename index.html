@@ -1,227 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Description" content="Sarah Gans, Front-End Web Developer">
-    <title>Sarah Gans | Front-End Developer</title>
-    <link rel="stylesheet" href="./sass/main.css" />
-    <script src="https://kit.fontawesome.com/b92fc38b7b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Sarah Gans, Front-End Web Developer">
+  <title>Sarah Gans | Front-End Developer</title>
+  <link rel="stylesheet" href="./sass/main.css" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b92fc38b7b.js" crossorigin="anonymous"></script>
+  <!-- Devicon -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <!-- Google Fonts (Source Sans Pro) -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+  <!-- Animate on Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-  <section class="home" id="home">
-    <header class="header" id="header">
-      <div class="wrapper headerParent commonParent">
-        <nav class="stroke">
-            <ul class="nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+  <!-- Header -->
+  <header class="header" id="home">
+    <div class="wrapper headerParent commonParent">
+      <!-- Desktop Nav -->
+      <nav class="stroke">
+          <ul class="nav">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+      <div class="hamburger-menu">
+        <img src="./assets/bars.svg" alt="Dropdown menu" class="fa fa-bars move home" tabindex="0">
+        <!-- Mobile Nav -->
+        <nav>
+          <ul class="nav">
+            <li><a href="#home" class="home">Home</a></li>
+            <li><a href="#about" class="about">About</a></li>
+            <li><a href="#skills" class="skills">Skills</a></li>
+            <li><a href="#projects" class="projects">Projects</a></li>
+            <li><a href="#contact" class="contact">Contact</a></li>
+          </ul>
         </nav>
-        <div class="hamburger-menu">
-          <img src="./assets/bars.svg" alt="Dropdown menu" class="fa fa-bars move home" tabindex="0">
-          <nav>
-            <ul class="nav">
-              <li><a href="#home" class="home">Home</a></li>
-              <li><a href="#about" class="about">About</a></li>
-              <li><a href="#skills" class="skills">Skills</a></li>
-              <li><a href="#projects" class="projects">Projects</a></li>
-              <li><a href="#contact" class="contact">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+      </div>
+      <!-- Header Text -->
+      <div>
+          <h1>Sarah Gans</h1>
+          <h2 class="header">Front-End Developer</h2>
+      </div>
+      <!-- Downwards Chevron -->
+      <div class="chev slide">
+          <a href="#about" class="down"><i class="fas fa-chevron-down"></i><span class="sr-only">Scroll Down</span></a>
+      </div>
+    </div>
+  </header>
+    <!-- Main Section -->
+  <main>
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
+      <h2>About</h2>
+      <div class="bodyLine"></div>
+      <div class="aboutParent">
+        <!-- Paragraph About Me -->
         <div>
-            <h1>Sarah Gans</h1>
-            <h2 class="header">Front-End Developer</h2>
+          <p>Hey, I'm Sarah. </p>
+          <p>I'm a front-end developer currently based in Toronto, Ontario. I love how coding lets me use creative problem solving to build user-friendly, fun, and accessible applications.</p>
+          <p>I recently completed the Web Development Immersive Bootcamp at Juno College, and am excited to continue learning about the world of web development while working on new projects. </p>
+          <p>Before Juno, I studied Cello Performance at The Juilliard School and at McGill University. Having come from a background in music performance, I am always eager to work in teams, and to collaborate with and learn from others. For more about me, feel free to download my resume.</p>
+          <div class="resume">
+            <a href="./assets/sarahGansCv.pdf" target="_blank">Download Resume</a>
+          </div>
         </div>
-        <div class="chev slide">
-            <a href="#about" class="down"><i class="fas fa-chevron-down"></i><span class="sr-only">Scroll Down</span></a>
+        <!-- Photo -->
+        <div class="picture">
+          <img src="./assets/95265021_675367666340979_272270629867094016_n Cropped.jpg" alt="Photograph of Sarah Gans">
         </div>
       </div>
-    </header>
+      </div>
     </section>
-    <main>
-      <section class="about" id="about">
-        <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
-        <h2>About</h2>
+    <!-- Skills Section -->
+    <section class="skills " id="skills">
+      <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Skills</h2>
         <div class="bodyLine"></div>
-        <div class="aboutParent">
-          <div>
-            <p>Hey, I'm Sarah. </p>
-            <p>I'm a front-end developer currently based in Toronto, Ontario. I love how coding lets me use creative problem solving to build user-friendly, fun, and accessible applications.</p>
-            <p>I recently completed the Web Development Immersive Bootcamp at Juno College, and am excited to continue learning about the world of web development while working on new projects. </p>
-            <p>Before Juno, I studied Cello Performance at The Juilliard School and at McGill University. Having come from a background in music performance, I am always eager to work in teams, and to collaborate with and learn from others. For more about me, feel free to download my resume.</p>
-            <div class="resume">
-              <a href="./assets/sarahGansCv.pdf" target="_blank">Download Resume</a>
-            </div>
+        <!-- Grid -->
+        <div class="gridWrapper">
+          <!-- List of icons -->
+          <div class="icon">
+            <i class="devicon-visualstudio-plain"></i>
+            <p>VS Code</p>
           </div>
-          <div class="picture">
-            <img src="./assets/95265021_675367666340979_272270629867094016_n Cropped.jpg" alt="Photograph of Sarah Gans">
+          <div class="icon">
+            <i class="devicon-html5-plain"></i>
+            <p>HTML5</p>
           </div>
-        </div>
-        </div>
-      </section>
-      <section class="skills " id="skills">
-        <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
-          <h2>Skills</h2>
-          <div class="bodyLine"></div>
-          <div class="gridWrapper">
-            <div class="icon">
-              <i class="devicon-visualstudio-plain"></i>
-              <p>VS Code</p>
-            </div>
-            <div class="icon">
-              <i class="devicon-html5-plain"></i>
-              <p>HTML5</p>
-            </div>
-            <div class="icon">
-              <i class="devicon-css3-plain"></i>
-              <p>CSS3</p>
-            </div>
-            <div class="icon">
-              <i class="devicon-sass-original"></i>
-              <p>Sass</p>
-            </div>
-            <div class="icon">
-              <i class="devicon-javascript-plain"></i>
-              <p class="js">JavaScript</p>
-            </div>
-            <div class="icon">
-              <i class="devicon-jquery-plain"></i>
-              <p>JQuery</p>
-            </div>
-            <div class="icon">
-              <i class="devicon-react-original"></i>
-              <p>React</p>
-            </div>
-            <div class="icon">
-              <img src="./assets/responsive.svg" alt="">
-              <p>Responsive Design</p>
-            </div>
-            <div class="icon">
-              <i class="devicon-github-plain"></i>
-              <p>Github</p>
-            </div>
-            <div class="icon">
-              <i class="devicon-git-plain"></i>
-              <p>Git</p>
-            </div>
-            <div class="icon">
-              <i class="fas fa-universal-access"></i>
-              <p>Accessibility</p>
-            </div>
-            <div class="icon">
-              <img src="./assets/output-onlinepngtools.png" alt="">
-              <p>Firebase</p>
-            </div>
-          <div>
-        </div>
-      </section>
-      <section class="projects" id="projects">
-        <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
-          <h2>Projects</h2>
-          <div class="bodyLine"></div>
-          <div class="projectParent side">
-              <div>
-                <img class="project" src="./assets/front-view-of-macbook-pro.png" alt="Chirptronome application mockup on a computer screen.">
-              </div>
-              <div class="margin">
-              <h3>Chirptronome</h3>
-              <h4>React | Firebase | SCSS</h4>
-              <p>If you've ever wanted to practice your musical instrument with a bird chirp, you're in luck. Practice with the chirps
-              of the Chirptronome and store the tempo, meter, title, and composer of the music you're playing for another day.</p>
-              <div class="link">
-                <a href="https://sarahmgans.github.io/sarahGansProjectFive/" target="_blank" rel="noreferrer">Live</a>
-                <a href="https://github.com/sarahmgans/sarahGansProjectFive" target="_blank" rel="noreferrer">Github</a>
-              </div>
-            </div>
+          <div class="icon">
+            <i class="devicon-css3-plain"></i>
+            <p>CSS3</p>
           </div>
-          <div class="bodyLine seperator"></div>
-          <div class="projectParent middle">
+          <div class="icon">
+            <i class="devicon-sass-original"></i>
+            <p>Sass</p>
+          </div>
+          <div class="icon">
+            <i class="devicon-javascript-plain"></i>
+            <p class="js">JavaScript</p>
+          </div>
+          <div class="icon">
+            <i class="devicon-jquery-plain"></i>
+            <p>JQuery</p>
+          </div>
+          <div class="icon">
+            <i class="devicon-react-original"></i>
+            <p>React</p>
+          </div>
+          <div class="icon">
+            <img src="./assets/responsive.svg" alt="">
+            <p>Responsive Design</p>
+          </div>
+          <div class="icon">
+            <i class="devicon-github-plain"></i>
+            <p>Github</p>
+          </div>
+          <div class="icon">
+            <i class="devicon-git-plain"></i>
+            <p>Git</p>
+          </div>
+          <div class="icon">
+            <i class="fas fa-universal-access"></i>
+            <p>Accessibility</p>
+          </div>
+          <div class="icon">
+            <img src="./assets/output-onlinepngtools.png" alt="">
+            <p>Firebase</p>
+          </div>
+        <div>
+      </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Projects</h2>
+        <div class="bodyLine"></div>
+        <!-- First Project -->
+        <div class="projectParent side">
             <div>
-              <h3>The Perfect Apple for You</h3>
-              <h4>HTML | SCSS | JavaScript | JQuery</h4>
-              <p>By the time you buy an apple, it's too late to know if you'll enjoy it or not. Now you can make sure that every time you buy an apple, it's the perfect apple. Get started on the quiz now to discover the perfect apple for you.</p>
-              <div class="link">
-                <a href="https://sarahmgans.github.io/sarahGansBootcampProjectThree/" target="_blank" rel="noreferrer">Live</a>
-                <a href="https://github.com/sarahmgans/sarahGansBootcampProjectThree" target="_blank" rel="noreferrer">Github</a>
-              </div>
-            </div>
-            <div>
-              <img class="project" src="./assets/front-view-of-macbook-pro3.png" alt="The Perfect Apple for You application mockup on a computer screen.">
-            </div>
-          </div>
-          <div class="bodyLine seperator"></div>
-          <div class="projectParent side">
-            <div>
-              <img class="project" src="./assets/front-view-of-macbook-pro2.png" alt="Creative PSD conversion mockup on a computer screen.">
+              <img class="project" src="./assets/front-view-of-macbook-pro.png" alt="Chirptronome application mockup on a computer screen.">
             </div>
             <div class="margin">
-              <h3>Creative</h3>
-              <h4>HTML | SCSS | JavaScript | jQuery</h4>
-              <p>A multi-page PSD conversion that is fully accessible and responsive on all different screen sizes. JavaScript and jQuery are used to make a drop-down menu for tablet and mobile views.</p>
-              <div class="link">
-                <a href="https://sarahmgans.github.io/sarahmGansProjectTwo/home.html" target="_blank" rel="noreferrer">Live</a>
-                <a href="https://github.com/sarahmgans/sarahmGansProjectTwo" target="_blank" rel="noreferrer">Github</a>
-              </div>
+            <h3>Chirptronome</h3>
+            <h4>React | Firebase | SCSS</h4>
+            <p>If you've ever wanted to practice your musical instrument with a bird chirp, you're in luck. Practice with the chirps
+            of the Chirptronome and store the tempo, meter, title, and composer of the music you're playing for another day.</p>
+            <div class="link">
+              <a href="https://sarahmgans.github.io/sarahGansProjectFive/" target="_blank" rel="noreferrer">Live</a>
+              <a href="https://github.com/sarahmgans/sarahGansProjectFive" target="_blank" rel="noreferrer">Github</a>
             </div>
           </div>
         </div>
-      </section>
-      <section class="contact" id="contact">
-        <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
-          <h2>Contact</h2>
-          <div class="bodyLine"></div>
-          <p class="working">It would be great to hear from you if you'd like to talk and/or work together.</p>
-          <form action="https://formspree.io/mnqgndek" method="POST">
-            <div class="formParent">
-              <div class="half">
-                <label for="name" class="visuallyHidden">Name</label>
-                <input type="text" placeholder="Name" id="name" name="name" class="padded" required>
-              </div>
-              <div class="half">
-                <label for="email" class="visuallyHidden">Email</label>
-                <input type="email" placeholder="Email" id="email" name="_replyto" class="padded" required>
-              </div>
+        <div class="bodyLine seperator"></div>
+        <!-- Second Project -->
+        <div class="projectParent middle">
+          <div>
+            <h3>The Perfect Apple for You</h3>
+            <h4>HTML | SCSS | JavaScript | JQuery</h4>
+            <p>By the time you buy an apple, it's too late to know if you'll enjoy it or not. Now you can make sure that every time you buy an apple, it's the perfect apple. Get started on the quiz now to discover the perfect apple for you.</p>
+            <div class="link">
+              <a href="https://sarahmgans.github.io/sarahGansBootcampProjectThree/" target="_blank" rel="noreferrer">Live</a>
+              <a href="https://github.com/sarahmgans/sarahGansBootcampProjectThree" target="_blank" rel="noreferrer">Github</a>
             </div>
-            <div>
-              <label for="message" class="visuallyHidden">Message</label>
-              <textarea style="resize:none;" name="message" id="message" cols="30" rows="8" placeholder="Message" class="padded" required></textarea>
-            </div>
-            <div class="buttonParent">
-            <button class="submit" type="submit">Send</button>
-            </div>
-          </form>
-          <div class="phone">
-            <a href="tel: (437) 777-7348">(437) 777-7348</a>
-            <a href="mailto: sarahmgans@gmail.com">sarahmgans@gmail.com</a>
           </div>
-          <div class="social">
-            <a href="https://twitter.com/sarahmgans" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i><span class="sr-only">Twitter</span></a>
-            <a href="https://github.com/sarahmgans" target="_blank" rel="noreferrer"><i class="fab fa-github"></i><span class="sr-only">Github</span></a>
+          <div>
+            <img class="project" src="./assets/front-view-of-macbook-pro3.png" alt="The Perfect Apple for You application mockup on a computer screen.">
           </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="wrapper">
-        <p>© Sarah Gans | 2020</p>
+        <div class="bodyLine seperator"></div>
+        <!-- Third Project -->
+        <div class="projectParent side">
+          <div>
+            <img class="project" src="./assets/front-view-of-macbook-pro2.png" alt="Creative PSD conversion mockup on a computer screen.">
+          </div>
+          <div class="margin">
+            <h3>Creative</h3>
+            <h4>HTML | SCSS | JavaScript | jQuery</h4>
+            <p>A multi-page PSD conversion that is fully accessible and responsive on all different screen sizes. JavaScript and jQuery are used to make a drop-down menu for tablet and mobile views.</p>
+            <div class="link">
+              <a href="https://sarahmgans.github.io/sarahmGansProjectTwo/home.html" target="_blank" rel="noreferrer">Live</a>
+              <a href="https://github.com/sarahmgans/sarahmGansProjectTwo" target="_blank" rel="noreferrer">Github</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="wrapper" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Contact</h2>
+        <div class="bodyLine"></div>
+        <p class="working">It would be great to hear from you if you'd like to talk and/or work together.</p>
+        <!-- Form -->
+        <form action="https://formspree.io/mnqgndek" method="POST">
+          <div class="formParent">
+            <div class="half">
+              <label for="name" class="visuallyHidden">Name</label>
+              <input type="text" placeholder="Name" id="name" name="name" class="padded" required>
+            </div>
+            <div class="half">
+              <label for="email" class="visuallyHidden">Email</label>
+              <input type="email" placeholder="Email" id="email" name="_replyto" class="padded" required>
+            </div>
+          </div>
+          <div>
+            <label for="message" class="visuallyHidden">Message</label>
+            <textarea style="resize:none;" name="message" id="message" cols="30" rows="8" placeholder="Message" class="padded" required></textarea>
+          </div>
+          <div class="buttonParent">
+          <button class="submit" type="submit">Send</button>
+          </div>
+        </form>
+        <!-- Other Contact Info -->
+        <div class="phone">
+          <a href="tel: (437) 777-7348">(437) 777-7348</a>
+          <a href="mailto: sarahmgans@gmail.com">sarahmgans@gmail.com</a>
+        </div>
+        <div class="social">
+          <a href="https://twitter.com/sarahmgans" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i><span class="sr-only">Twitter</span></a>
+          <a href="https://github.com/sarahmgans" target="_blank" rel="noreferrer"><i class="fab fa-github"></i><span class="sr-only">Github</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div class="wrapper">
+      <p>© Sarah Gans | 2020</p>
+    </div>
+  </footer>
+<!-- Tag for Animate on Scroll -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<!-- Disable AOS for Mobile -->
 <script>
-  AOS.init({
-    disable: 'mobile'
-  });
+AOS.init({
+  disable: 'mobile'
+});
 </script>
+<!-- Tag for jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Script Tag -->
 <script src="script.js"></script>
 </body>
 </html>

@@ -339,7 +339,7 @@ h1 {
   letter-spacing: 7px;
   font-family: 'Hamburg Hand Regular';
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .headerImg img {
@@ -930,8 +930,6 @@ section.contact .social a i {
 
 section.contact .social a i:hover, section.contact .social a i:focus {
   color: #b3331a;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 footer {

@@ -13,7 +13,7 @@ $(document).ready(function () {
       scroll('main');
     })
   }
-  
+
   // Scroll for menu items
   const clickEventMenu = () => {
     $('.nav a').on('click', function (e) {
@@ -28,7 +28,7 @@ $(document).ready(function () {
   // Scrolling for the fixed nav
   // From https://codepen.io/yuki-san/pen/eJqLNO
 
-  let section = $('section#home, section#about, section#skills, section#projects, section#contact')
+  let section = $('header#home, section#about, section#skills, section#projects, section#contact')
     let nav = $('nav')
 
   $(window).on('scroll', function () {
