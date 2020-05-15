@@ -3,22 +3,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: $darkColor;
 } 
-
 img {
   display: inline-block;
 }
-
 .wrapper {
   max-width: 1280px;
   width: 90%;
   margin: 0 auto;
 }
-
 ul {
   margin: 0;
   padding: 0;
 }
-
 h2 {
   color: $darkColor;
   text-align: center;
@@ -30,17 +26,13 @@ h2 {
   padding-bottom: 30px;
   font-weight: 400;
 }
-
 p,
 .phone {
   font-family: 'Source Sans Pro';
   color: $darkColor;
   font-size: 19px;
   line-height: 1.5;
-  // 45-70 characters per line
-  // buttericks typography
 }
-
 .bodyLine {
   border-top: 2px solid $accentColor;
   width: 70px;
@@ -48,33 +40,6 @@ p,
   margin: 0 auto;
 }
 
-.link {
-    display: flex;
-    justify-content: center;
-  }
-
-.link a {
-    background-color: $accentColor;
-    margin: 20px 20px 0px 20px;
-    padding: 13px 40px;
-    border-radius: 20px;
-    font-family: 'Hamburg Hand Light';
-    font-size: 15px;
-    color: $lightColor;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: 0.3s;
-    width: 157px;
-    text-align: center;
-    &:hover,
-    &:focus {
-      background-color: $darkColor;
-    }
-  }
-
-  // * {
-  //   border: 1px solid red;
-  // }
 
 
 

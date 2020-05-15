@@ -4,13 +4,11 @@ header {
     height: 100vh;
     display: flex;
 }
-
 .headerParent {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 h1 {
     font-size: 64px;
     letter-spacing: 7px;
@@ -18,18 +16,15 @@ h1 {
     margin-top: 0;
     margin-bottom: 12px;
 }
-
 .headerImg img {
     width: 550px;
 }
-
 h1, 
 h2.header {
     color: $lightColor;
     padding: 0;
     text-align: center;
 }
-
 h2.header {
     font-size: 27px;
     font-family: 'Hamburg Hand Light';
@@ -37,7 +32,6 @@ h2.header {
     margin: 0;
     line-height: 1.5;
 }
-
 a {
     text-decoration: none;
     border: 2px solid transparent;
@@ -46,13 +40,11 @@ a {
     padding-bottom: 3px;
     display: block;
 }
-
 nav {
     display: flex;
     justify-content: center;
     height: 78px;
 }
-
 nav ul li {
     font-family: 'Hamburg Hand Light';
     color: $lightColor;
@@ -61,16 +53,13 @@ nav ul li {
     letter-spacing: 4px;
     position: relative;
 }
-
 nav ul li a:focus{
   outline: thin dotted;
 }
-
 nav ul li a:active,
 nav ul li a:hover {
   outline: 0;
 }
-
 nav ul li a:hover::after, 
 nav ul li a.active::after,
 nav ul li a:active::after {
@@ -82,8 +71,6 @@ nav ul li a:active::after {
     position: absolute;
     bottom: 2px;
 }
-
-
 header ul {
     list-style: none;
     margin: 0;
@@ -96,20 +83,17 @@ header ul {
     z-index: 1000;
     white-space: no-wrap;
 }
-
 header i.fas {
     color: $accentColor;
     font-size: 55px;
     transition: 0.3s;
     margin-bottom: 30px;
 }
-
 .chev {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .slide {
 	-webkit-animation: slide 3s infinite;
 	animation: slide 3s infinite;
@@ -121,32 +105,28 @@ header i.fas {
     transform: translate(0, -15px);
     opacity: 0;
   }
-
   50% {
     opacity: 1;
   }
-
   100% {
     -webkit-transform: translate(0, 15px);
-            transform: translate(0, 15px);
-            opacity: 0;
+    transform: translate(0, 15px);
+    opacity: 0;
   }
 }
 
 @keyframes slide {
   0% {
     -webkit-transform: translate(0, -15px);
-            transform: translate(0, -15px);
-            opacity: 0;
+    transform: translate(0, -15px);
+    opacity: 0;
   }
-
   50% {
     opacity: 1;
   }
-
   100% {
     -webkit-transform: translate(0, 15px);
-            transform: translate(0, 15px);
-            opacity: 0;
+    transform: translate(0, 15px);
+    opacity: 0;
   }
 }

@@ -1,16 +1,16 @@
 .hamburger-menu {
-    position: relative;
-    display: none;
+  position: relative;
+  display: none;
 }
 
 .fa.fa-bars {
-    color: $accentColor;
-    top: 16px;
-    right: 16px;
-    width: 45px;
-    position: fixed;
-    z-index: 1000;
-    cursor: pointer;
+  color: $accentColor;
+  top: 16px;
+  right: 16px;
+  width: 45px;
+  position: fixed;
+  z-index: 1000;
+  cursor: pointer;
 }
 
 
