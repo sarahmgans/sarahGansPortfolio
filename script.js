@@ -49,11 +49,11 @@ $(document).ready(function () {
   });
 
   // For hamburger menu
-  $('img.move').on('click', function () {
+  $('img.move, a').on('click', function () {
     $('.hamburger-menu nav').toggleClass('navVisible')
   })
 
-  $('img').on('keydown', function (e) {
+  $('img.move').on('keydown', function (e) {
     if (e.key == 'Enter') {
       $('.hamburger-menu nav').toggleClass('navVisible')
     }
