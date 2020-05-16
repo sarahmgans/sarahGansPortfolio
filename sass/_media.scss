@@ -85,7 +85,10 @@
     line-height: 1;
   }
   header i.fas {
-    margin-bottom: 80px;
+    margin-bottom: 110px;
+  }
+  .headerParent > div:nth-child(3) {
+    margin-top: 60px;
   }
 
   a {
