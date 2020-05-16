@@ -49,7 +49,7 @@ $(document).ready(function () {
   });
 
   // For hamburger menu
-  $('img.move, a').on('click', function () {
+  $('img.move, nav a').on('click', function () {
     $('.hamburger-menu nav').toggleClass('navVisible')
   })
 
