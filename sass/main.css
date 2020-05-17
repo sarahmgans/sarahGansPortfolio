@@ -1199,11 +1199,11 @@ footer p {
 @media (max-width: 430px) {
   .fa.fa-bars {
     width: 40px;
-    top: 14px;
-    right: 14px;
+    top: 5px;
+    right: 5px;
   }
   .topBar {
-    height: 55px;
+    height: 42px;
   }
   section.about .picture img {
     width: 100%;
@@ -1247,10 +1247,6 @@ footer p {
   h2.header {
     font-size: 19px;
   }
-  .fa.fa-bars {
-    top: 16px;
-    right: 16px;
-  }
   section.projects .projectParent h3 {
     letter-spacing: 1px;
     font-size: 20px;
@@ -1260,10 +1256,6 @@ footer p {
 @media (max-width: 375px) {
   h2 {
     font-size: 25px;
-  }
-  .fa.fa-bars {
-    top: 14px;
-    right: 14px;
   }
   header i.fas {
     font-size: 50px;
@@ -1290,10 +1282,6 @@ footer p {
 }
 
 @media (max-width: 350px) {
-  .fa.fa-bars {
-    top: 11px;
-    right: 11px;
-  }
   h1 {
     font-size: 35px;
     letter-spacing: 1px;
