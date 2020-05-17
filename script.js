@@ -53,9 +53,10 @@ $(document).ready(function () {
     $('.hamburger-menu nav').toggleClass('navVisible')
   })
 
-  $('img.move').on('keydown', function (e) {
+  $('img.move, nav a').on('keydown', function (e) {
     if (e.key == 'Enter') {
       $('.hamburger-menu nav').toggleClass('navVisible')
     }
   })
 });
+

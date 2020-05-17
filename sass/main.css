@@ -508,6 +508,15 @@ header i.fas {
   cursor: pointer;
 }
 
+.topBar {
+  height: 74px;
+  width: 100%;
+  background-color: rgba(68, 67, 73, 0.933);
+  position: fixed;
+  left: 0;
+  z-index: 2;
+}
+
 section.about {
   height: auto;
   background-color: #EFEFF0;
@@ -1100,9 +1109,6 @@ footer p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: #444349;
-    width: 100vw;
-    position: fixed;
   }
   .navVisible {
     visibility: visible;
