@@ -49,12 +49,12 @@ $(document).ready(function () {
   });
 
   // For hamburger menu
-  $('img.move, nav a').on('click', function () {
+  $('.menu-btn, nav a').on('click', function () {
     $('.hamburger-menu nav').toggleClass('navVisible')
-    $('.hamburger-menu .topBar').toggleClass('bar')
+    $('.menu-btn').toggleClass('menu-btn_active')
   })
 
-  $('img.move, nav a').on('keydown', function (e) {
+  $('.menu-btn, nav a').on('keydown', function (e) {
     if (e.key == 'Enter') {
       $('.hamburger-menu nav').toggleClass('navVisible')
     }
