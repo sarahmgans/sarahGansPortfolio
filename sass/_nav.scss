@@ -37,4 +37,54 @@
   margin-top: 3px;
 }
 
+.menu-btn {
+  display: block;
+  height: 50px;
+  background-color: $darkColor;
+  position: fixed;
+  width: 100vw;
+  right: 0;
+  z-index: 100;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  top: 50%;
+  left: 97%;
+  margin-left: -24px;
+  margin-top: -1px;
+  width: 25px;
+  height: 2px;
+  background-color: $accentColor;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+  display: block;
+  transition: 0.2s;
+}
+
+.menu-btn span::before {
+  transform: translateY(-5px);
+}
+
+.menu-btn span::after {
+  transform: translateY(5px);
+}
+
+.menu-btn_active span {
+  height: 0;
+}
+
+.menu-btn_active span:before {
+  transform: rotate(45deg);
+}
+
+.menu-btn_active span:after {
+  transform: rotate(-45deg);
+}
+
 
