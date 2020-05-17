@@ -14,21 +14,27 @@
 }
 
 .topBar {
-  height: 52px;
+  height: 53px;
   width: 100%;
   background-color: $darkColor;
   position: fixed;
   left: 0;
   z-index: 2;
+  opacity: 0.95;
 }
 
 .bar {
   position: initial;
-  height: 74px;
+  height: 0;
   width: 100%;
   background-color: $darkColor;
   left: 0;
   z-index: 2;
+  opacity: 1;
+}
+
+.margin {
+  margin-top: 3px;
 }
 
 
