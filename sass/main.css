@@ -1206,6 +1206,9 @@ footer p {
     top: 14px;
     right: 14px;
   }
+  .topBar {
+    height: 55px;
+  }
   section.about .picture img {
     width: 100%;
     height: auto;
