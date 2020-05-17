@@ -515,11 +515,12 @@ header i.fas {
   position: fixed;
   left: 0;
   z-index: 2;
+  opacity: 0.95;
 }
 
 .bar {
   position: initial;
-  height: 0;
+  height: 53px;
   width: 100%;
   background-color: #444349;
   left: 0;
