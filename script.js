@@ -14,7 +14,7 @@ $(document).ready(function () {
     })
   }
 
-  // Scroll for menu items
+  // Scroll for menu items (not hamburger menu)
   const clickEventMenu = () => {
     $('.nav.top a').on('click', function (e) {
     e.preventDefault();

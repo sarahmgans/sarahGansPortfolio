@@ -411,7 +411,7 @@ nav ul li a:active::after {
   bottom: 2px;
 }
 
-header ul {
+header ul.top {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -426,6 +426,14 @@ header ul {
           justify-content: center;
   z-index: 1000;
   white-space: no-wrap;
+}
+
+header ul.bottom {
+  width: 100vw;
+  background-color: #444349;
+  position: fixed;
+  z-index: 1000;
+  list-style: none;
 }
 
 header i.fas {
@@ -494,7 +502,7 @@ header i.fas {
   color: #b3331a;
   top: 16px;
   right: 16px;
-  width: 45px;
+  width: 50px;
   position: fixed;
   z-index: 1000;
   cursor: pointer;
@@ -1092,6 +1100,9 @@ footer p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    background-color: #444349;
+    width: 100vw;
+    position: fixed;
   }
   .navVisible {
     visibility: visible;

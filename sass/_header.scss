@@ -71,7 +71,7 @@ nav ul li a:active::after {
     position: absolute;
     bottom: 2px;
 }
-header ul {
+header ul.top {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -82,6 +82,13 @@ header ul {
     justify-content: center;
     z-index: 1000;
     white-space: no-wrap;
+}
+header ul.bottom {
+  width: 100vw;
+  background-color: $darkColor;
+  position: fixed;
+  z-index: 1000;
+  list-style: none;
 }
 header i.fas {
     color: $accentColor;

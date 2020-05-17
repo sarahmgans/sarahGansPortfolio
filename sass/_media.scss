@@ -134,6 +134,9 @@
       height: 100%;
       opacity: 0.95;
       justify-content: center;
+      background-color: $darkColor;
+      width: 100vw;
+      position: fixed;
     }
   }
   .navVisible {
