@@ -5,8 +5,8 @@
 
 .fa.fa-bars {
   color: $accentColor;
-  top: 16px;
-  right: 16px;
+  top: 6px;
+  right: 6px;
   width: 50px;
   position: fixed;
   z-index: 1000;
@@ -14,7 +14,7 @@
 }
 
 .topBar {
-  height: 74px;
+  height: 52px;
   width: 100%;
   background-color: $darkColor;
   position: fixed;
