@@ -2,7 +2,7 @@
 $(document).ready(function () {
   const scroll = function (scrollTo) {
     $('html, body').animate({
-      scrollTop: $(scrollTo).offset().top - (nav.outerHeight() - 2)
+      scrollTop: $(scrollTo).offset().top - (ul.outerHeight() - 2)
     }, 500);
   }
 
@@ -29,7 +29,7 @@ $(document).ready(function () {
   // From https://codepen.io/yuki-san/pen/eJqLNO
 
   let section = $('header#home, section#about, section#skills, section#projects, section#contact')
-    let nav = $('nav')
+    let nav = $('ul')
 
   $(window).on('scroll', function () {
     const cur_pos = $(this).scrollTop();
@@ -49,7 +49,7 @@ $(document).ready(function () {
   });
 
   // For hamburger menu
-  $('img.move, nav a').on('click', function () {
+  $('ul a').on('click', function () {
     $('.hamburger-menu nav').toggleClass('navVisible')
     $('.hamburger-menu .topBar').toggleClass('bar')
   })

@@ -1,24 +1,141 @@
-header {
-    background-image: url(../assets/stardust_@2X.png);
-    background-attachment: fixed;
-    height: 100vh;
-    display: flex;
+body {
+  margin: 0;
+  background-color: #f4f4f4;
 }
-.headerParent {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+
+a {
+  color: #000;
 }
-h1 {
-    font-size: 64px;
-    letter-spacing: 7px;
-    font-family: 'Hamburg Hand Regular';
-    margin-top: 0;
-    margin-bottom: 10px;
+
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
 }
-.headerImg img {
-    width: 550px;
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
 }
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+// .header .logo {
+//   display: block;
+//   float: left;
+//   font-size: 2em;
+//   padding: 10px 20px;
+//   text-decoration: none;
+// }
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+@media (min-width: 768px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
 h1, 
 h2.header {
     color: $lightColor;
@@ -31,64 +148,6 @@ h2.header {
     letter-spacing: 6px;
     margin: 0;
     line-height: 1.5;
-}
-a {
-    text-decoration: none;
-    border: 2px solid transparent;
-    color: $lightColor;
-    transition: 0.3s all ease-out; 
-    padding-bottom: 3px;
-    display: block;
-}
-nav {
-    display: flex;
-    justify-content: center;
-    height: 78px;
-}
-nav ul li {
-    font-family: 'Hamburg Hand Light';
-    color: $lightColor;
-    margin: 25px 30px 25px 30px;
-    font-size: 18px;
-    letter-spacing: 4px;
-    position: relative;
-}
-nav ul li a:focus{
-  outline: thin dotted;
-}
-nav ul li a:active,
-nav ul li a:hover {
-  outline: 0;
-}
-nav ul li a:hover::after, 
-nav ul li a.active::after,
-nav ul li a:active::after {
-    content: '';
-    width: calc(100% - 8px);
-    display: block;
-    height: 2px;
-    background-color: $accentColor;
-    position: absolute;
-    bottom: 2px;
-}
-header ul.top {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    position: fixed;
-    background-color: $darkColor;
-    width: 100vw;
-    justify-content: center;
-    z-index: 1000;
-    white-space: no-wrap;
-}
-header ul.bottom {
-  width: 100vw;
-  background-color: $darkColor;
-  position: fixed;
-  z-index: 1000;
-  list-style: none;
 }
 header i.fas {
     color: $accentColor;
