@@ -51,11 +51,13 @@ $(document).ready(function () {
   // For hamburger menu
   $('img.move, nav a').on('click', function () {
     $('.hamburger-menu nav').toggleClass('navVisible')
+    $('.hamburger-menu .topBar').toggleClass('bar')
   })
 
-  $('img.move').on('keydown', function (e) {
+  $('img.move, nav a').on('keydown', function (e) {
     if (e.key == 'Enter') {
       $('.hamburger-menu nav').toggleClass('navVisible')
     }
   })
 });
+

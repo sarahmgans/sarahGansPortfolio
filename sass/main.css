@@ -508,6 +508,24 @@ header i.fas {
   cursor: pointer;
 }
 
+.topBar {
+  height: 74px;
+  width: 100%;
+  background-color: #444349;
+  position: fixed;
+  left: 0;
+  z-index: 2;
+}
+
+.bar {
+  position: initial;
+  height: 74px;
+  width: 100%;
+  background-color: #444349;
+  left: 0;
+  z-index: 2;
+}
+
 section.about {
   height: auto;
   background-color: #EFEFF0;
@@ -1096,13 +1114,9 @@ footer p {
     padding-right: 17px;
     width: 100%;
     height: 100%;
-    opacity: 0.95;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-color: #444349;
-    width: 100vw;
-    position: fixed;
   }
   .navVisible {
     visibility: visible;
@@ -1191,6 +1205,9 @@ footer p {
     width: 40px;
     top: 14px;
     right: 14px;
+  }
+  .topBar {
+    height: 55px;
   }
   section.about .picture img {
     width: 100%;
