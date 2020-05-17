@@ -16,8 +16,17 @@
 .topBar {
   height: 74px;
   width: 100%;
-  background-color: rgba(68, 67, 73, 0.933);
+  background-color: $darkColor;
   position: fixed;
+  left: 0;
+  z-index: 2;
+}
+
+.bar {
+  position: initial;
+  height: 74px;
+  width: 100%;
+  background-color: $darkColor;
   left: 0;
   z-index: 2;
 }

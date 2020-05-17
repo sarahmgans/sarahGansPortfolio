@@ -511,8 +511,17 @@ header i.fas {
 .topBar {
   height: 74px;
   width: 100%;
-  background-color: rgba(68, 67, 73, 0.933);
+  background-color: #444349;
   position: fixed;
+  left: 0;
+  z-index: 2;
+}
+
+.bar {
+  position: initial;
+  height: 74px;
+  width: 100%;
+  background-color: #444349;
   left: 0;
   z-index: 2;
 }
@@ -1105,7 +1114,6 @@ footer p {
     padding-right: 17px;
     width: 100%;
     height: 100%;
-    opacity: 0.95;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
