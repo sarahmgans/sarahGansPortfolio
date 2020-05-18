@@ -650,9 +650,6 @@ section.about .picture img {
 section.skills {
   height: auto;
   background-color: #DCEBEA;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding-bottom: 50px;
 }
 
