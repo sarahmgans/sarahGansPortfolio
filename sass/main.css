@@ -264,6 +264,10 @@ html {
   overflow: hidden;
 }
 
+html {
+  background-color: #444349;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
