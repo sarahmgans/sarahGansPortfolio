@@ -567,12 +567,6 @@ header i.fas {
           transform: rotate(-45deg);
 }
 
-:target:before {
-  content: '';
-  display: block;
-  height: 50px;
-}
-
 section.about {
   height: auto;
   background-color: #EFEFF0;

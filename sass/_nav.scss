@@ -62,9 +62,10 @@
   transform: rotate(-45deg);
 }
 
-:target:before {
-    content: '';
-    display: block;
-    height: 50px;
-}
+// :target:before {
+//     content: '';
+//     display: block;
+//     padding-top: 40px;
+//     margin-top: -40px;
+// }
 
