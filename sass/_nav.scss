@@ -1,40 +1,10 @@
 .hamburger-menu {
   position: relative;
   display: none;
-}
-
-.fa.fa-bars {
-  color: $accentColor;
-  top: 6px;
-  right: 6px;
-  width: 50px;
-  position: fixed;
-  z-index: 1000;
-  cursor: pointer;
-}
-
-.topBar {
-  height: 53px;
-  width: 100%;
-  background-color: $darkColor;
-  position: fixed;
-  left: 0;
-  z-index: 2;
-  opacity: 0.95;
-}
-
-.bar {
-  position: initial;
-  height: 53px;
-  width: 100%;
-  background-color: $darkColor;
-  left: 0;
-  z-index: 2;
-  opacity: 1;
-}
-
-.margin {
-  margin-top: 3px;
+  &:focus,
+  &:hover{
+    outline: thin dotted;
+  }
 }
 
 .menu-btn {
@@ -45,7 +15,16 @@
   width: 100vw;
   right: 0;
   z-index: 100;
+  cursor: pointer;
+  border: none;
+  &:focus {
+    outline: thin dotted white;
+  }
 }
+
+
+
+
 
 .menu-btn span,
 .menu-btn span::before,

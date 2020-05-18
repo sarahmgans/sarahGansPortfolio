@@ -57,6 +57,7 @@ $(document).ready(function () {
   $('.menu-btn, nav a').on('keydown', function (e) {
     if (e.key == 'Enter') {
       $('.hamburger-menu nav').toggleClass('navVisible')
+      $('.menu-btn').toggleClass('menu-btn_active')
     }
   })
 });
