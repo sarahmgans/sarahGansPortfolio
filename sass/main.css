@@ -438,7 +438,6 @@ header ul.bottom {
   position: fixed;
   z-index: 1000;
   list-style: none;
-  margin-top: 19px;
 }
 
 header i.fas {
