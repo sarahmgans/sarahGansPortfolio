@@ -1183,6 +1183,8 @@ footer p {
     visibility: visible;
     right: 0;
     top: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   nav {
     visibility: hidden;
@@ -1192,6 +1194,7 @@ footer p {
     top: 100%;
     width: 100%;
     height: 50px;
+    bottom: 100vw;
   }
   nav ul li a:hover::after,
   nav ul li a.active::after,
