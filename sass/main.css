@@ -438,6 +438,7 @@ header ul.bottom {
   position: fixed;
   z-index: 1000;
   list-style: none;
+  margin-top: 19px;
 }
 
 header i.fas {
@@ -498,7 +499,6 @@ header i.fas {
 }
 
 .hamburger-menu {
-  position: relative;
   display: none;
 }
 
@@ -506,65 +506,144 @@ header i.fas {
   outline: thin dotted;
 }
 
-.menu-btn {
-  display: block;
-  height: 50px;
-  background-color: #444349;
-  position: fixed;
-  width: 100vw;
-  right: 0;
-  z-index: 100;
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
   cursor: pointer;
-  border: none;
+  position: fixed;
+  z-index: 20000;
+  -webkit-transition-property: opacity, -webkit-filter;
+  transition-property: opacity, -webkit-filter;
+  transition-property: opacity, filter;
+  transition-property: opacity, filter, -webkit-filter;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
 }
 
-.menu-btn:focus {
-  outline: thin dotted white;
+.hamburger:hover {
+  opacity: 1;
 }
 
-.menu-btn span,
-.menu-btn span::before,
-.menu-btn span::after {
-  position: absolute;
-  top: 50%;
-  left: 97%;
-  margin-left: -24px;
-  margin-top: -1px;
-  width: 25px;
-  height: 2px;
+.hamburger.is-active:hover {
+  opacity: 1;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
   background-color: #b3331a;
 }
 
-.menu-btn span::before,
-.menu-btn span::after {
-  content: '';
+.hamburger-box {
+  width: 40px;
+  height: 42px;
+  display: inline-block;
+  position: fixed;
+  background-color: #444349;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hamburger-inner {
   display: block;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  top: 50%;
+  margin-top: -2px;
 }
 
-.menu-btn span::before {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 30px;
+  height: 2px;
+  background-color: #b3331a;
+  position: absolute;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.15s;
+          transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
 
-.menu-btn span::after {
-  -webkit-transform: translateY(5px);
-          transform: translateY(5px);
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
 }
 
-.menu-btn_active span {
-  height: 0;
+.hamburger-inner::before {
+  top: -10px;
 }
 
-.menu-btn_active span:before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+.hamburger-inner::after {
+  bottom: -10px;
 }
 
-.menu-btn_active span:after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+.hamburger--collapse .hamburger-inner {
+  top: 32px;
+  left: 10px;
+  z-index: 100000;
+  bottom: 0;
+  -webkit-transition-duration: 0.13s;
+          transition-duration: 0.13s;
+  -webkit-transition-delay: 0.13s;
+          transition-delay: 0.13s;
+  -webkit-transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+          transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--collapse .hamburger-inner::after {
+  top: -20px;
+  -webkit-transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+}
+
+.hamburger--collapse .hamburger-inner::before {
+  -webkit-transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--collapse.is-active .hamburger-inner {
+  -webkit-transform: translate3d(0, -10px, 0) rotate(-45deg);
+          transform: translate3d(0, -10px, 0) rotate(-45deg);
+  -webkit-transition-delay: 0.22s;
+          transition-delay: 0.22s;
+  -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--collapse.is-active .hamburger-inner::after {
+  top: 0;
+  opacity: 0;
+  -webkit-transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
+}
+
+.hamburger--collapse.is-active .hamburger-inner::before {
+  top: 0;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 section.about {
@@ -1165,7 +1244,7 @@ footer p {
     position: fixed;
     z-index: 3;
     width: 100%;
-    height: 50px;
+    height: 42px;
     left: 100vw;
     -webkit-transition: 0.3s;
     transition: 0.3s;
