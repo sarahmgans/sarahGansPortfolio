@@ -49,9 +49,9 @@ $(document).ready(function () {
   });
 
   // For hamburger menu
-  $('.menu-btn, nav a').on('click', function () {
+  $('.hamburger, nav a').on('click', function () {
     $('.hamburger-menu nav').toggleClass('navVisible')
-    $('.menu-btn').toggleClass('menu-btn_active')
+    $('.hamburger').toggleClass('is-active')
   })
 
   $('.menu-btn, nav a').on('keydown', function (e) {
