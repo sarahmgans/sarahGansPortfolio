@@ -1183,8 +1183,8 @@ footer p {
     visibility: visible;
     right: 0;
     top: 0;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
   nav {
     visibility: hidden;
