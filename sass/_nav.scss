@@ -87,4 +87,9 @@
   transform: rotate(-45deg);
 }
 
+:target:before {
+    content: '';
+    display: block;
+    height: 50px;
+}
 
