@@ -104,10 +104,17 @@ section.contact {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: $darkColor;
     a[href^="mailto"] {
       color: inherit;
       text-decoration: underline;
       line-height: 0;
+    }
+    a.calendly {
+      color: inherit;
+      line-height: 0;
+      text-decoration: underline;
+      margin-top: 23px;
     }
     p:nth-child(1) {
       text-align: center;

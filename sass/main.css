@@ -1025,12 +1025,20 @@ section.contact .phone {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #444349;
 }
 
 section.contact .phone a[href^="mailto"] {
   color: inherit;
   text-decoration: underline;
   line-height: 0;
+}
+
+section.contact .phone a.calendly {
+  color: inherit;
+  line-height: 0;
+  text-decoration: underline;
+  margin-top: 23px;
 }
 
 section.contact .phone p:nth-child(1) {
