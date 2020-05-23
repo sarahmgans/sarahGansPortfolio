@@ -140,7 +140,6 @@ section.contact {
       color: $darkColor;
       transition: 0.3s;
       &:hover,
-      &:focus,
       &:active {
         color: $accentColor;
       }
