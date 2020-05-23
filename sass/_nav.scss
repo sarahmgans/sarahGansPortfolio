@@ -25,6 +25,10 @@
   &:focus {
     outline: thin dotted white;
   }
+  &:active,
+  &:hover {
+    outline: none;
+  }
   }
 
   .hamburger:hover {
