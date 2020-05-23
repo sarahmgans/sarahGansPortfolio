@@ -567,7 +567,7 @@ header i.fas {
           align-items: center;
 }
 
-.hamburger-box:focus, .hamburger-box:active, .hamburger-box:hover {
+.hamburger-box:focus {
   outline: thin grey dotted;
 }
 
