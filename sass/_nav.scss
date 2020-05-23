@@ -54,6 +54,10 @@
   &:focus {
     outline: thin grey dotted;
   }
+  &:active,
+  &:hover {
+    outline: none;
+  }
 }
 
 .hamburger-inner {

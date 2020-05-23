@@ -571,6 +571,10 @@ header i.fas {
   outline: thin grey dotted;
 }
 
+.hamburger-box:active, .hamburger-box:hover {
+  outline: none;
+}
+
 .hamburger-inner {
   display: block;
   top: 50%;
