@@ -130,14 +130,20 @@ section.contact {
     justify-content: center;
     margin-bottom: 100px;
     margin-top: 23px;
-    a i {
+    a {
+      &:focus-within {
+        color: $accentColor;
+      }
+     i {
       margin-left: 10px;
       margin-right: 10px;
       color: $darkColor;
       transition: 0.3s;
       &:hover,
-      &:focus {
+      &:focus,
+      &:active {
         color: $accentColor;
+      }
       }
     }
   }

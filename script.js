@@ -54,10 +54,10 @@ $(document).ready(function () {
     $('.hamburger').toggleClass('is-active')
   })
 
-  $('.menu-btn, nav a').on('keydown', function (e) {
+  $('.hamburger-menu, nav a').on('keydown', function (e) {
     if (e.key == 'Enter') {
       $('.hamburger-menu nav').toggleClass('navVisible')
-      $('.menu-btn').toggleClass('menu-btn_active')
+      $('.hamburger').toggleClass('is-active')
     }
   })
 });

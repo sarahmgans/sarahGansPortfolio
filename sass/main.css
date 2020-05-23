@@ -502,7 +502,7 @@ header i.fas {
 }
 
 .hamburger-menu:focus, .hamburger-menu:hover {
-  outline: thin dotted;
+  outline: thin dotted white;
 }
 
 .hamburger {
@@ -526,6 +526,10 @@ header i.fas {
   border: 0;
   margin: 0;
   overflow: visible;
+}
+
+.hamburger:focus {
+  outline: thin dotted white;
 }
 
 .hamburger:hover {
@@ -557,6 +561,10 @@ header i.fas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.hamburger-box:focus, .hamburger-box:active, .hamburger-box:hover {
+  outline: thin grey dotted;
 }
 
 .hamburger-inner {
@@ -1062,6 +1070,10 @@ section.contact .social {
   margin-top: 23px;
 }
 
+section.contact .social a:focus-within {
+  color: #b3331a;
+}
+
 section.contact .social a i {
   margin-left: 10px;
   margin-right: 10px;
@@ -1070,7 +1082,7 @@ section.contact .social a i {
   transition: 0.3s;
 }
 
-section.contact .social a i:hover, section.contact .social a i:focus {
+section.contact .social a i:hover, section.contact .social a i:focus, section.contact .social a i:active {
   color: #b3331a;
 }
 
