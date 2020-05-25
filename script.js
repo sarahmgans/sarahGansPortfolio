@@ -14,7 +14,7 @@ $(document).ready(function () {
     })
   }
 
-  // Scroll for menu items (not hamburger menu)
+  // Scroll for menu items 
   const clickEventMenu = () => {
     $('.nav a').on('click', function (e) {
     e.preventDefault();
@@ -29,7 +29,7 @@ $(document).ready(function () {
   // From https://codepen.io/yuki-san/pen/eJqLNO
 
   let section = $('header#home, section#about, section#skills, section#projects, section#contact')
-    let nav = $('nav')
+  let nav = $('nav')
 
   $(window).on('scroll', function () {
     const cur_pos = $(this).scrollTop();
@@ -53,7 +53,8 @@ $(document).ready(function () {
     $('.hamburger-menu nav').toggleClass('navVisible')
     $('.hamburger').toggleClass('is-active')
   })
-
+  
+  // For accessible hamburger menu
   $('.hamburger-menu, nav a').on('keydown', function (e) {
     if (e.key == 'Enter') {
       $('.hamburger-menu nav').toggleClass('navVisible')

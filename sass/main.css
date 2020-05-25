@@ -585,6 +585,7 @@ header i.fas {
   width: 30px;
   height: 2px;
   background-color: #b3331a;
+  border-radius: 20px;
   position: absolute;
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
@@ -1078,8 +1079,8 @@ section.contact .social {
   margin-top: 23px;
 }
 
-section.contact .social a:focus-within {
-  color: #b3331a;
+section.contact .social a:focus {
+  color: #444349;
 }
 
 section.contact .social a i {
