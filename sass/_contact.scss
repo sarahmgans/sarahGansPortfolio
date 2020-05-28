@@ -39,7 +39,7 @@ section.contact {
         margin: 0;
       }
       &:focus {
-      box-shadow: 0 2px 0 0 $accentColor;
+      box-shadow: 0 1px 0 0 $accentColor;
       border-bottom: 1px solid $accentColor;
       &:focus + label {
       color: $accentColor;
@@ -81,7 +81,7 @@ section.contact {
       border-radius: 0px;
       background-color: transparent;
       &:focus {
-        box-shadow: 0 2px 0 0 $accentColor;
+        box-shadow: 0 1px 0 0 $accentColor;
         border-bottom: 1px solid $accentColor;
       &:focus + label {
         color: $accentColor;
