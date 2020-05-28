@@ -928,9 +928,7 @@ section.contact textarea::placeholder {
 }
 
 section.contact textarea:focus {
-  -webkit-box-shadow: 0 1px 0 0 #b3331a;
-          box-shadow: 0 1px 0 0 #b3331a;
-  border-bottom: 1px solid #b3331a;
+  border-bottom: 2px solid #b3331a;
 }
 
 section.contact textarea:focus:focus + label {
@@ -977,9 +975,7 @@ section.contact .half input[type="email"] {
 
 section.contact .half input[type="text"]:focus,
 section.contact .half input[type="email"]:focus {
-  -webkit-box-shadow: 0 1px 0 0 #b3331a;
-          box-shadow: 0 1px 0 0 #b3331a;
-  border-bottom: 1px solid #b3331a;
+  border-bottom: 2px solid #b3331a;
 }
 
 section.contact .half input[type="text"]:focus:focus + label,
