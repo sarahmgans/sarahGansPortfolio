@@ -928,12 +928,13 @@ section.contact textarea::placeholder {
 }
 
 section.contact textarea:focus {
-  -webkit-box-shadow: 0 1px 0 0 #444349;
-          box-shadow: 0 1px 0 0 #444349;
+  -webkit-box-shadow: 0 2px 0 0 #b3331a;
+          box-shadow: 0 2px 0 0 #b3331a;
+  border-bottom: 1px solid #b3331a;
 }
 
 section.contact textarea:focus:focus + label {
-  color: #444349;
+  color: #b3331a;
 }
 
 section.contact .submit {
@@ -961,8 +962,8 @@ section.contact .half input[type="text"],
 section.contact .half input[type="email"] {
   border: none;
   border-bottom: 1px solid #444349;
-  -webkit-box-shadow: 0 1px 0 0 transparent;
-          box-shadow: 0 1px 0 0 transparent;
+  -webkit-box-shadow: 0 2px 0 0 transparent;
+          box-shadow: 0 2px 0 0 transparent;
   width: 100%;
   height: 30px;
   font-family: 'Source Sans Pro';
@@ -976,13 +977,14 @@ section.contact .half input[type="email"] {
 
 section.contact .half input[type="text"]:focus,
 section.contact .half input[type="email"]:focus {
-  -webkit-box-shadow: 0 1px 0 0 #444349;
-          box-shadow: 0 1px 0 0 #444349;
+  -webkit-box-shadow: 0 2px 0 0 #b3331a;
+          box-shadow: 0 2px 0 0 #b3331a;
+  border-bottom: 1px solid #b3331a;
 }
 
 section.contact .half input[type="text"]:focus:focus + label,
 section.contact .half input[type="email"]:focus:focus + label {
-  color: #444349;
+  color: #b3331a;
 }
 
 section.contact .formParent .half {
