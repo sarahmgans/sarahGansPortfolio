@@ -32,14 +32,15 @@ section.contact {
       color: $darkColor;
       border-radius: 0px;
       background-color: transparent;
-      box-shadow: 0 1px 0 0 transparent;
+      box-shadow: 0 2px 0 0 transparent;
       &::placeholder {
         color: $darkColor;
         padding: 0;
         margin: 0;
       }
       &:focus {
-      border-bottom: 2px solid $accentColor;
+      border-bottom: 1px solid $accentColor;
+      box-shadow: 0 2px 0 0 $accentColor;
       &:focus + label {
       color: $accentColor;
       }
@@ -80,7 +81,8 @@ section.contact {
       border-radius: 0px;
       background-color: transparent;
       &:focus {
-        border-bottom: 2px solid $accentColor;
+        border-bottom: 1px solid $accentColor;
+        box-shadow: 0 2px 0 0 $accentColor;
       &:focus + label {
         color: $accentColor;
       }
