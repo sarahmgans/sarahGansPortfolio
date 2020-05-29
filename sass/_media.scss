@@ -10,8 +10,8 @@
 }
 @media(max-width: 1160px) {
   section.skills .gridWrapper {
-    grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 200px 200px 200px;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(3, 200px);
   }
   section.projects img,
   section.projects .projectParent p {
@@ -53,8 +53,8 @@
     }
   }
   section.skills .gridWrapper {
-    grid-template-columns: 190px 190px 190px;
-    grid-template-rows: 190px 190px 190px 190px;
+    grid-template-columns: repeat(3, 190px);
+    grid-template-rows: repeat(4, 190px);
     .icon {
     font-size: 70px;
     }
@@ -187,8 +187,8 @@
     letter-spacing: 2px;
   }
   section.skills .gridWrapper {
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(6, 200px);
   }
   section.projects .projectParent img,
   div.projectParent:nth-child(3) > div:nth-child(2) {
@@ -235,8 +235,8 @@
   section.skills {
     padding-bottom: 35px;
     .gridWrapper {
-      grid-template-columns: 180px 180px;
-      grid-template-rows: 180px 180px 180px 180px 180px 180px;
+      grid-template-columns: repeat(2, 180px);
+      grid-template-rows: repeat(6, 180px);
     }
   }
   section.projects {
@@ -299,8 +299,8 @@
   section.skills {
     padding-bottom: 45px;
     .gridWrapper {
-      grid-template-columns: 145px 145px;
-      grid-template-rows: 150px 150px 150px 150px 150px 150px;
+      grid-template-columns: repeat(2, 145px);
+      grid-template-rows: repeat(6, 150px);
     }
   }
 }
